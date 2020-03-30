@@ -1,4 +1,6 @@
-﻿namespace TheHardwareMonitor
+﻿using System.Drawing;
+
+namespace TheHardwareMonitor
 {
     partial class MainForm
     {
@@ -31,38 +33,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.tabPageCpu = new System.Windows.Forms.TabPage();
-            this.groupBoxChache = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel19 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel20 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.groupBoxClocks = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel14 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel16 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel15 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel17 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel18 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.groupBoxProcessor = new System.Windows.Forms.GroupBox();
             this.layoutBox = new System.Windows.Forms.FlowLayoutPanel();
             this.layoutNameAndValue = new System.Windows.Forms.FlowLayoutPanel();
@@ -107,6 +77,38 @@
             this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.groupBoxChache = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel19 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel20 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.groupBoxClocks = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel14 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel16 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel15 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel17 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel18 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.groupBoxSelectProc = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel24 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel35 = new System.Windows.Forms.FlowLayoutPanel();
@@ -119,21 +121,15 @@
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.tabPageCaches = new System.Windows.Forms.TabPage();
-            this.tabPageMainboard = new System.Windows.Forms.TabPage();
-            this.tabPageMemory = new System.Windows.Forms.TabPage();
-            this.tabPageSpd = new System.Windows.Forms.TabPage();
-            this.tabPageGraphics = new System.Windows.Forms.TabPage();
-            this.tabPageBench = new System.Windows.Forms.TabPage();
-            this.buttonClose = new System.Windows.Forms.Button();
+            this.flowLayoutPanel25 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel27 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
             this.flowLayoutPanel26 = new System.Windows.Forms.FlowLayoutPanel();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel27 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel25 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel28 = new System.Windows.Forms.FlowLayoutPanel();
             this.label53 = new System.Windows.Forms.Label();
@@ -159,6 +155,9 @@
             this.label66 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel39 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
             this.flowLayoutPanel34 = new System.Windows.Forms.FlowLayoutPanel();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
@@ -166,22 +165,8 @@
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel39 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
+            this.tabPageMainboard = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel40 = new System.Windows.Forms.FlowLayoutPanel();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel41 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel43 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel44 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel45 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel46 = new System.Windows.Forms.FlowLayoutPanel();
@@ -190,10 +175,10 @@
             this.flowLayoutPanel47 = new System.Windows.Forms.FlowLayoutPanel();
             this.label91 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
             this.flowLayoutPanel49 = new System.Windows.Forms.FlowLayoutPanel();
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
             this.label117 = new System.Windows.Forms.Label();
             this.label118 = new System.Windows.Forms.Label();
@@ -207,16 +192,29 @@
             this.label102 = new System.Windows.Forms.Label();
             this.label103 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel42 = new System.Windows.Forms.FlowLayoutPanel();
             this.label81 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel41 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
             this.flowLayoutPanel51 = new System.Windows.Forms.FlowLayoutPanel();
             this.label83 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
-            this.label106 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel52 = new System.Windows.Forms.FlowLayoutPanel();
             this.label107 = new System.Windows.Forms.Label();
             this.label108 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel44 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label106 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel43 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.tabPageMemory = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel53 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel54 = new System.Windows.Forms.FlowLayoutPanel();
@@ -238,6 +236,9 @@
             this.flowLayoutPanel61 = new System.Windows.Forms.FlowLayoutPanel();
             this.label127 = new System.Windows.Forms.Label();
             this.label128 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel69 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label141 = new System.Windows.Forms.Label();
+            this.label142 = new System.Windows.Forms.Label();
             this.flowLayoutPanel59 = new System.Windows.Forms.FlowLayoutPanel();
             this.label115 = new System.Windows.Forms.Label();
             this.label116 = new System.Windows.Forms.Label();
@@ -265,22 +266,18 @@
             this.flowLayoutPanel68 = new System.Windows.Forms.FlowLayoutPanel();
             this.label139 = new System.Windows.Forms.Label();
             this.label140 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel69 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label141 = new System.Windows.Forms.Label();
-            this.label142 = new System.Windows.Forms.Label();
             this.flowLayoutPanel70 = new System.Windows.Forms.FlowLayoutPanel();
             this.label143 = new System.Windows.Forms.Label();
             this.label144 = new System.Windows.Forms.Label();
+            this.tabPageSpd = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel71 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.label150 = new System.Windows.Forms.Label();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel76 = new System.Windows.Forms.FlowLayoutPanel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.flowLayoutPanel73 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label146 = new System.Windows.Forms.Label();
-            this.label145 = new System.Windows.Forms.Label();
+            this.label150 = new System.Windows.Forms.Label();
             this.flowLayoutPanel72 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel73 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label145 = new System.Windows.Forms.Label();
+            this.label146 = new System.Windows.Forms.Label();
             this.label147 = new System.Windows.Forms.Label();
             this.label148 = new System.Windows.Forms.Label();
             this.flowLayoutPanel74 = new System.Windows.Forms.FlowLayoutPanel();
@@ -298,29 +295,31 @@
             this.label159 = new System.Windows.Forms.Label();
             this.label160 = new System.Windows.Forms.Label();
             this.label161 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel78 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label162 = new System.Windows.Forms.Label();
+            this.label163 = new System.Windows.Forms.Label();
+            this.label164 = new System.Windows.Forms.Label();
+            this.label165 = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel76 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel79 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label171 = new System.Windows.Forms.Label();
+            this.label172 = new System.Windows.Forms.Label();
+            this.label173 = new System.Windows.Forms.Label();
+            this.label174 = new System.Windows.Forms.Label();
+            this.label175 = new System.Windows.Forms.Label();
             this.flowLayoutPanel80 = new System.Windows.Forms.FlowLayoutPanel();
             this.label176 = new System.Windows.Forms.Label();
             this.label177 = new System.Windows.Forms.Label();
             this.label178 = new System.Windows.Forms.Label();
             this.label179 = new System.Windows.Forms.Label();
             this.label180 = new System.Windows.Forms.Label();
-            this.label175 = new System.Windows.Forms.Label();
-            this.label174 = new System.Windows.Forms.Label();
-            this.label173 = new System.Windows.Forms.Label();
-            this.label172 = new System.Windows.Forms.Label();
-            this.label171 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel79 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel81 = new System.Windows.Forms.FlowLayoutPanel();
             this.label166 = new System.Windows.Forms.Label();
             this.label167 = new System.Windows.Forms.Label();
             this.label168 = new System.Windows.Forms.Label();
             this.label169 = new System.Windows.Forms.Label();
             this.label170 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel78 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label162 = new System.Windows.Forms.Label();
-            this.label163 = new System.Windows.Forms.Label();
-            this.label164 = new System.Windows.Forms.Label();
-            this.label165 = new System.Windows.Forms.Label();
             this.flowLayoutPanel82 = new System.Windows.Forms.FlowLayoutPanel();
             this.label181 = new System.Windows.Forms.Label();
             this.label182 = new System.Windows.Forms.Label();
@@ -363,16 +362,17 @@
             this.label213 = new System.Windows.Forms.Label();
             this.label214 = new System.Windows.Forms.Label();
             this.label215 = new System.Windows.Forms.Label();
+            this.tabPageGraphics = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel89 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label216 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel96 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel97 = new System.Windows.Forms.FlowLayoutPanel();
             this.label238 = new System.Windows.Forms.Label();
             this.label239 = new System.Windows.Forms.Label();
-            this.label216 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel90 = new System.Windows.Forms.FlowLayoutPanel();
             this.label217 = new System.Windows.Forms.Label();
             this.label218 = new System.Windows.Forms.Label();
@@ -406,37 +406,31 @@
             this.flowLayoutPanel102 = new System.Windows.Forms.FlowLayoutPanel();
             this.label235 = new System.Windows.Forms.Label();
             this.label236 = new System.Windows.Forms.Label();
+            this.tabPageBench = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel103 = new System.Windows.Forms.FlowLayoutPanel();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.label241 = new System.Windows.Forms.Label();
+            this.colorProgressBar2 = new ColorProgressBar.ColorProgressBar();
+            this.colorProgressBar1 = new ColorProgressBar.ColorProgressBar();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label240 = new System.Windows.Forms.Label();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.colorProgressBar3 = new ColorProgressBar.ColorProgressBar();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.colorProgressBar4 = new ColorProgressBar.ColorProgressBar();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label256 = new System.Windows.Forms.Label();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.label237 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.label256 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
-            this.label240 = new System.Windows.Forms.Label();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
+            this.label242 = new System.Windows.Forms.Label();
+            this.label243 = new System.Windows.Forms.Label();
+            this.label244 = new System.Windows.Forms.Label();
             this.mainTabControl.SuspendLayout();
             this.tabPageCpu.SuspendLayout();
-            this.groupBoxChache.SuspendLayout();
-            this.flowLayoutPanel19.SuspendLayout();
-            this.flowLayoutPanel20.SuspendLayout();
-            this.flowLayoutPanel21.SuspendLayout();
-            this.flowLayoutPanel22.SuspendLayout();
-            this.flowLayoutPanel23.SuspendLayout();
-            this.groupBoxClocks.SuspendLayout();
-            this.flowLayoutPanel14.SuspendLayout();
-            this.flowLayoutPanel16.SuspendLayout();
-            this.flowLayoutPanel15.SuspendLayout();
-            this.flowLayoutPanel17.SuspendLayout();
-            this.flowLayoutPanel18.SuspendLayout();
             this.groupBoxProcessor.SuspendLayout();
             this.layoutBox.SuspendLayout();
             this.layoutNameAndValue.SuspendLayout();
@@ -453,21 +447,28 @@
             this.flowLayoutPanel11.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
             this.flowLayoutPanel13.SuspendLayout();
+            this.groupBoxChache.SuspendLayout();
+            this.flowLayoutPanel19.SuspendLayout();
+            this.flowLayoutPanel20.SuspendLayout();
+            this.flowLayoutPanel21.SuspendLayout();
+            this.flowLayoutPanel22.SuspendLayout();
+            this.flowLayoutPanel23.SuspendLayout();
+            this.groupBoxClocks.SuspendLayout();
+            this.flowLayoutPanel14.SuspendLayout();
+            this.flowLayoutPanel16.SuspendLayout();
+            this.flowLayoutPanel15.SuspendLayout();
+            this.flowLayoutPanel17.SuspendLayout();
+            this.flowLayoutPanel18.SuspendLayout();
             this.groupBoxSelectProc.SuspendLayout();
             this.flowLayoutPanel24.SuspendLayout();
             this.flowLayoutPanel35.SuspendLayout();
             this.flowLayoutPanel36.SuspendLayout();
             this.flowLayoutPanel37.SuspendLayout();
             this.tabPageCaches.SuspendLayout();
-            this.tabPageMainboard.SuspendLayout();
-            this.tabPageMemory.SuspendLayout();
-            this.tabPageSpd.SuspendLayout();
-            this.tabPageGraphics.SuspendLayout();
-            this.tabPageBench.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.flowLayoutPanel26.SuspendLayout();
-            this.flowLayoutPanel27.SuspendLayout();
             this.flowLayoutPanel25.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.flowLayoutPanel27.SuspendLayout();
+            this.flowLayoutPanel26.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.flowLayoutPanel28.SuspendLayout();
             this.flowLayoutPanel29.SuspendLayout();
@@ -478,15 +479,11 @@
             this.flowLayoutPanel32.SuspendLayout();
             this.flowLayoutPanel33.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.flowLayoutPanel39.SuspendLayout();
             this.flowLayoutPanel34.SuspendLayout();
             this.flowLayoutPanel38.SuspendLayout();
-            this.flowLayoutPanel39.SuspendLayout();
+            this.tabPageMainboard.SuspendLayout();
             this.flowLayoutPanel40.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.flowLayoutPanel41.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.flowLayoutPanel43.SuspendLayout();
-            this.flowLayoutPanel44.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.flowLayoutPanel45.SuspendLayout();
             this.flowLayoutPanel46.SuspendLayout();
@@ -494,9 +491,15 @@
             this.flowLayoutPanel49.SuspendLayout();
             this.flowLayoutPanel48.SuspendLayout();
             this.flowLayoutPanel50.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.flowLayoutPanel42.SuspendLayout();
+            this.flowLayoutPanel41.SuspendLayout();
             this.flowLayoutPanel51.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.flowLayoutPanel52.SuspendLayout();
+            this.flowLayoutPanel44.SuspendLayout();
+            this.flowLayoutPanel43.SuspendLayout();
+            this.tabPageMemory.SuspendLayout();
             this.flowLayoutPanel53.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.flowLayoutPanel54.SuspendLayout();
@@ -506,6 +509,7 @@
             this.groupBox10.SuspendLayout();
             this.flowLayoutPanel58.SuspendLayout();
             this.flowLayoutPanel61.SuspendLayout();
+            this.flowLayoutPanel69.SuspendLayout();
             this.flowLayoutPanel59.SuspendLayout();
             this.flowLayoutPanel60.SuspendLayout();
             this.flowLayoutPanel62.SuspendLayout();
@@ -515,21 +519,21 @@
             this.flowLayoutPanel66.SuspendLayout();
             this.flowLayoutPanel67.SuspendLayout();
             this.flowLayoutPanel68.SuspendLayout();
-            this.flowLayoutPanel69.SuspendLayout();
             this.flowLayoutPanel70.SuspendLayout();
+            this.tabPageSpd.SuspendLayout();
             this.flowLayoutPanel71.SuspendLayout();
             this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.flowLayoutPanel76.SuspendLayout();
-            this.flowLayoutPanel73.SuspendLayout();
             this.flowLayoutPanel72.SuspendLayout();
+            this.flowLayoutPanel73.SuspendLayout();
             this.flowLayoutPanel74.SuspendLayout();
             this.flowLayoutPanel75.SuspendLayout();
             this.flowLayoutPanel77.SuspendLayout();
-            this.flowLayoutPanel80.SuspendLayout();
-            this.flowLayoutPanel79.SuspendLayout();
-            this.flowLayoutPanel81.SuspendLayout();
             this.flowLayoutPanel78.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.flowLayoutPanel76.SuspendLayout();
+            this.flowLayoutPanel79.SuspendLayout();
+            this.flowLayoutPanel80.SuspendLayout();
+            this.flowLayoutPanel81.SuspendLayout();
             this.flowLayoutPanel82.SuspendLayout();
             this.flowLayoutPanel83.SuspendLayout();
             this.flowLayoutPanel84.SuspendLayout();
@@ -537,6 +541,7 @@
             this.flowLayoutPanel86.SuspendLayout();
             this.flowLayoutPanel87.SuspendLayout();
             this.flowLayoutPanel88.SuspendLayout();
+            this.tabPageGraphics.SuspendLayout();
             this.flowLayoutPanel89.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox14.SuspendLayout();
@@ -555,10 +560,11 @@
             this.flowLayoutPanel100.SuspendLayout();
             this.flowLayoutPanel101.SuspendLayout();
             this.flowLayoutPanel102.SuspendLayout();
+            this.tabPageBench.SuspendLayout();
             this.flowLayoutPanel103.SuspendLayout();
-            this.groupBox17.SuspendLayout();
-            this.groupBox20.SuspendLayout();
             this.groupBox18.SuspendLayout();
+            this.groupBox20.SuspendLayout();
+            this.groupBox17.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -592,398 +598,6 @@
             this.tabPageCpu.Size = new System.Drawing.Size(790, 393);
             this.tabPageCpu.TabIndex = 0;
             this.tabPageCpu.Text = "ЦП";
-            // 
-            // groupBoxChache
-            // 
-            this.groupBoxChache.Controls.Add(this.flowLayoutPanel19);
-            this.groupBoxChache.Location = new System.Drawing.Point(276, 219);
-            this.groupBoxChache.Name = "groupBoxChache";
-            this.groupBoxChache.Size = new System.Drawing.Size(507, 109);
-            this.groupBoxChache.TabIndex = 2;
-            this.groupBoxChache.TabStop = false;
-            this.groupBoxChache.Text = "Процессор";
-            // 
-            // flowLayoutPanel19
-            // 
-            this.flowLayoutPanel19.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel19.Controls.Add(this.flowLayoutPanel20);
-            this.flowLayoutPanel19.Controls.Add(this.flowLayoutPanel21);
-            this.flowLayoutPanel19.Controls.Add(this.flowLayoutPanel22);
-            this.flowLayoutPanel19.Controls.Add(this.flowLayoutPanel23);
-            this.flowLayoutPanel19.Location = new System.Drawing.Point(2, 12);
-            this.flowLayoutPanel19.Name = "flowLayoutPanel19";
-            this.flowLayoutPanel19.Size = new System.Drawing.Size(770, 205);
-            this.flowLayoutPanel19.TabIndex = 1;
-            // 
-            // flowLayoutPanel20
-            // 
-            this.flowLayoutPanel20.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel20.Controls.Add(this.label35);
-            this.flowLayoutPanel20.Controls.Add(this.label36);
-            this.flowLayoutPanel20.Controls.Add(this.label43);
-            this.flowLayoutPanel20.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel20.Name = "flowLayoutPanel20";
-            this.flowLayoutPanel20.Size = new System.Drawing.Size(486, 17);
-            this.flowLayoutPanel20.TabIndex = 1;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label35.Location = new System.Drawing.Point(3, 0);
-            this.label35.MinimumSize = new System.Drawing.Size(240, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(240, 13);
-            this.label35.TabIndex = 0;
-            this.label35.Text = "Сведения о кэш-памяти 1 уровня для данных";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label36
-            // 
-            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label36.AutoSize = true;
-            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label36.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label36.Location = new System.Drawing.Point(249, 0);
-            this.label36.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(100, 15);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "ж 31.0 ( 8 - 32 )";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label43
-            // 
-            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label43.AutoSize = true;
-            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label43.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label43.Location = new System.Drawing.Point(355, 0);
-            this.label43.MinimumSize = new System.Drawing.Size(60, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(60, 15);
-            this.label43.TabIndex = 2;
-            this.label43.Text = "1-way";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel21
-            // 
-            this.flowLayoutPanel21.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel21.Controls.Add(this.label37);
-            this.flowLayoutPanel21.Controls.Add(this.label38);
-            this.flowLayoutPanel21.Controls.Add(this.label44);
-            this.flowLayoutPanel21.Location = new System.Drawing.Point(3, 26);
-            this.flowLayoutPanel21.Name = "flowLayoutPanel21";
-            this.flowLayoutPanel21.Size = new System.Drawing.Size(486, 17);
-            this.flowLayoutPanel21.TabIndex = 2;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label37.Location = new System.Drawing.Point(3, 0);
-            this.label37.MinimumSize = new System.Drawing.Size(240, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(240, 13);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "Множитель процессора";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label38
-            // 
-            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label38.AutoSize = true;
-            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label38.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label38.Location = new System.Drawing.Point(249, 0);
-            this.label38.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(100, 15);
-            this.label38.TabIndex = 1;
-            this.label38.Text = "ж 31.0 ( 8 - 32 )";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label44
-            // 
-            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label44.AutoSize = true;
-            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label44.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label44.Location = new System.Drawing.Point(355, 0);
-            this.label44.MinimumSize = new System.Drawing.Size(60, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(60, 15);
-            this.label44.TabIndex = 3;
-            this.label44.Text = "1-way";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel22
-            // 
-            this.flowLayoutPanel22.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel22.Controls.Add(this.label39);
-            this.flowLayoutPanel22.Controls.Add(this.label40);
-            this.flowLayoutPanel22.Controls.Add(this.label45);
-            this.flowLayoutPanel22.Location = new System.Drawing.Point(3, 49);
-            this.flowLayoutPanel22.Name = "flowLayoutPanel22";
-            this.flowLayoutPanel22.Size = new System.Drawing.Size(486, 17);
-            this.flowLayoutPanel22.TabIndex = 3;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label39.Location = new System.Drawing.Point(3, 0);
-            this.label39.MinimumSize = new System.Drawing.Size(240, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(240, 13);
-            this.label39.TabIndex = 0;
-            this.label39.Text = "Множитель процессора";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label40
-            // 
-            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label40.AutoSize = true;
-            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label40.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label40.Location = new System.Drawing.Point(249, 0);
-            this.label40.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(100, 15);
-            this.label40.TabIndex = 1;
-            this.label40.Text = "ж 31.0 ( 8 - 32 )";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label45
-            // 
-            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label45.AutoSize = true;
-            this.label45.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label45.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label45.Location = new System.Drawing.Point(355, 0);
-            this.label45.MinimumSize = new System.Drawing.Size(60, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(60, 15);
-            this.label45.TabIndex = 3;
-            this.label45.Text = "1-way";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel23
-            // 
-            this.flowLayoutPanel23.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel23.Controls.Add(this.label41);
-            this.flowLayoutPanel23.Controls.Add(this.label42);
-            this.flowLayoutPanel23.Controls.Add(this.label46);
-            this.flowLayoutPanel23.Location = new System.Drawing.Point(3, 72);
-            this.flowLayoutPanel23.Name = "flowLayoutPanel23";
-            this.flowLayoutPanel23.Size = new System.Drawing.Size(486, 17);
-            this.flowLayoutPanel23.TabIndex = 4;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label41.Location = new System.Drawing.Point(3, 0);
-            this.label41.MinimumSize = new System.Drawing.Size(240, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(240, 13);
-            this.label41.TabIndex = 0;
-            this.label41.Text = "Множитель процессора";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label42
-            // 
-            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label42.AutoSize = true;
-            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label42.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label42.Location = new System.Drawing.Point(249, 0);
-            this.label42.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(100, 15);
-            this.label42.TabIndex = 1;
-            this.label42.Text = "ж 31.0 ( 8 - 32 )";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label46
-            // 
-            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label46.AutoSize = true;
-            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label46.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label46.Location = new System.Drawing.Point(355, 0);
-            this.label46.MinimumSize = new System.Drawing.Size(60, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(60, 15);
-            this.label46.TabIndex = 3;
-            this.label46.Text = "1-way";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBoxClocks
-            // 
-            this.groupBoxClocks.Controls.Add(this.flowLayoutPanel14);
-            this.groupBoxClocks.Location = new System.Drawing.Point(2, 219);
-            this.groupBoxClocks.Name = "groupBoxClocks";
-            this.groupBoxClocks.Size = new System.Drawing.Size(273, 109);
-            this.groupBoxClocks.TabIndex = 1;
-            this.groupBoxClocks.TabStop = false;
-            this.groupBoxClocks.Text = "Процессор";
-            // 
-            // flowLayoutPanel14
-            // 
-            this.flowLayoutPanel14.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel14.Controls.Add(this.flowLayoutPanel16);
-            this.flowLayoutPanel14.Controls.Add(this.flowLayoutPanel15);
-            this.flowLayoutPanel14.Controls.Add(this.flowLayoutPanel17);
-            this.flowLayoutPanel14.Controls.Add(this.flowLayoutPanel18);
-            this.flowLayoutPanel14.Location = new System.Drawing.Point(2, 12);
-            this.flowLayoutPanel14.Name = "flowLayoutPanel14";
-            this.flowLayoutPanel14.Size = new System.Drawing.Size(770, 205);
-            this.flowLayoutPanel14.TabIndex = 1;
-            // 
-            // flowLayoutPanel16
-            // 
-            this.flowLayoutPanel16.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel16.Controls.Add(this.label29);
-            this.flowLayoutPanel16.Controls.Add(this.label30);
-            this.flowLayoutPanel16.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel16.Name = "flowLayoutPanel16";
-            this.flowLayoutPanel16.Size = new System.Drawing.Size(386, 17);
-            this.flowLayoutPanel16.TabIndex = 1;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label29.Location = new System.Drawing.Point(3, 0);
-            this.label29.MinimumSize = new System.Drawing.Size(140, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(140, 13);
-            this.label29.TabIndex = 0;
-            this.label29.Text = "Множитель процессора";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label30
-            // 
-            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label30.AutoSize = true;
-            this.label30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label30.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label30.Location = new System.Drawing.Point(149, 0);
-            this.label30.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(100, 15);
-            this.label30.TabIndex = 1;
-            this.label30.Text = "ж 31.0 ( 8 - 32 )";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel15
-            // 
-            this.flowLayoutPanel15.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel15.Controls.Add(this.label27);
-            this.flowLayoutPanel15.Controls.Add(this.label28);
-            this.flowLayoutPanel15.Location = new System.Drawing.Point(3, 26);
-            this.flowLayoutPanel15.Name = "flowLayoutPanel15";
-            this.flowLayoutPanel15.Size = new System.Drawing.Size(386, 17);
-            this.flowLayoutPanel15.TabIndex = 2;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label27.Location = new System.Drawing.Point(3, 0);
-            this.label27.MinimumSize = new System.Drawing.Size(140, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(140, 13);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "Множитель процессора";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label28
-            // 
-            this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label28.AutoSize = true;
-            this.label28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label28.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label28.Location = new System.Drawing.Point(149, 0);
-            this.label28.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(100, 15);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "ж 31.0 ( 8 - 32 )";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel17
-            // 
-            this.flowLayoutPanel17.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel17.Controls.Add(this.label31);
-            this.flowLayoutPanel17.Controls.Add(this.label32);
-            this.flowLayoutPanel17.Location = new System.Drawing.Point(3, 49);
-            this.flowLayoutPanel17.Name = "flowLayoutPanel17";
-            this.flowLayoutPanel17.Size = new System.Drawing.Size(386, 17);
-            this.flowLayoutPanel17.TabIndex = 3;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label31.Location = new System.Drawing.Point(3, 0);
-            this.label31.MinimumSize = new System.Drawing.Size(140, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(140, 13);
-            this.label31.TabIndex = 0;
-            this.label31.Text = "Множитель процессора";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label32
-            // 
-            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label32.AutoSize = true;
-            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label32.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label32.Location = new System.Drawing.Point(149, 0);
-            this.label32.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(100, 15);
-            this.label32.TabIndex = 1;
-            this.label32.Text = "ж 31.0 ( 8 - 32 )";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel18
-            // 
-            this.flowLayoutPanel18.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel18.Controls.Add(this.label33);
-            this.flowLayoutPanel18.Controls.Add(this.label34);
-            this.flowLayoutPanel18.Location = new System.Drawing.Point(3, 72);
-            this.flowLayoutPanel18.Name = "flowLayoutPanel18";
-            this.flowLayoutPanel18.Size = new System.Drawing.Size(386, 17);
-            this.flowLayoutPanel18.TabIndex = 4;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label33.Location = new System.Drawing.Point(3, 0);
-            this.label33.MinimumSize = new System.Drawing.Size(140, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(140, 13);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "Множитель процессора";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label34
-            // 
-            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label34.AutoSize = true;
-            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label34.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label34.Location = new System.Drawing.Point(149, 0);
-            this.label34.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(100, 15);
-            this.label34.TabIndex = 1;
-            this.label34.Text = "ж 31.0 ( 8 - 32 )";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBoxProcessor
             // 
@@ -1520,6 +1134,398 @@
             this.label26.Text = "Текст в \r\nдве строчки";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // groupBoxChache
+            // 
+            this.groupBoxChache.Controls.Add(this.flowLayoutPanel19);
+            this.groupBoxChache.Location = new System.Drawing.Point(276, 219);
+            this.groupBoxChache.Name = "groupBoxChache";
+            this.groupBoxChache.Size = new System.Drawing.Size(507, 109);
+            this.groupBoxChache.TabIndex = 2;
+            this.groupBoxChache.TabStop = false;
+            this.groupBoxChache.Text = "Процессор";
+            // 
+            // flowLayoutPanel19
+            // 
+            this.flowLayoutPanel19.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel19.Controls.Add(this.flowLayoutPanel20);
+            this.flowLayoutPanel19.Controls.Add(this.flowLayoutPanel21);
+            this.flowLayoutPanel19.Controls.Add(this.flowLayoutPanel22);
+            this.flowLayoutPanel19.Controls.Add(this.flowLayoutPanel23);
+            this.flowLayoutPanel19.Location = new System.Drawing.Point(2, 12);
+            this.flowLayoutPanel19.Name = "flowLayoutPanel19";
+            this.flowLayoutPanel19.Size = new System.Drawing.Size(770, 205);
+            this.flowLayoutPanel19.TabIndex = 1;
+            // 
+            // flowLayoutPanel20
+            // 
+            this.flowLayoutPanel20.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel20.Controls.Add(this.label35);
+            this.flowLayoutPanel20.Controls.Add(this.label36);
+            this.flowLayoutPanel20.Controls.Add(this.label43);
+            this.flowLayoutPanel20.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel20.Name = "flowLayoutPanel20";
+            this.flowLayoutPanel20.Size = new System.Drawing.Size(486, 17);
+            this.flowLayoutPanel20.TabIndex = 1;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label35.Location = new System.Drawing.Point(3, 0);
+            this.label35.MinimumSize = new System.Drawing.Size(240, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(240, 13);
+            this.label35.TabIndex = 0;
+            this.label35.Text = "Сведения о кэш-памяти 1 уровня для данных";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label36
+            // 
+            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label36.AutoSize = true;
+            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label36.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label36.Location = new System.Drawing.Point(249, 0);
+            this.label36.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(100, 15);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "ж 31.0 ( 8 - 32 )";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label43
+            // 
+            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label43.AutoSize = true;
+            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label43.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label43.Location = new System.Drawing.Point(355, 0);
+            this.label43.MinimumSize = new System.Drawing.Size(60, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(60, 15);
+            this.label43.TabIndex = 2;
+            this.label43.Text = "1-way";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel21
+            // 
+            this.flowLayoutPanel21.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel21.Controls.Add(this.label37);
+            this.flowLayoutPanel21.Controls.Add(this.label38);
+            this.flowLayoutPanel21.Controls.Add(this.label44);
+            this.flowLayoutPanel21.Location = new System.Drawing.Point(3, 26);
+            this.flowLayoutPanel21.Name = "flowLayoutPanel21";
+            this.flowLayoutPanel21.Size = new System.Drawing.Size(486, 17);
+            this.flowLayoutPanel21.TabIndex = 2;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label37.Location = new System.Drawing.Point(3, 0);
+            this.label37.MinimumSize = new System.Drawing.Size(240, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(240, 13);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Множитель процессора";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label38
+            // 
+            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label38.AutoSize = true;
+            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label38.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label38.Location = new System.Drawing.Point(249, 0);
+            this.label38.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(100, 15);
+            this.label38.TabIndex = 1;
+            this.label38.Text = "ж 31.0 ( 8 - 32 )";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label44
+            // 
+            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label44.AutoSize = true;
+            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label44.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label44.Location = new System.Drawing.Point(355, 0);
+            this.label44.MinimumSize = new System.Drawing.Size(60, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(60, 15);
+            this.label44.TabIndex = 3;
+            this.label44.Text = "1-way";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel22
+            // 
+            this.flowLayoutPanel22.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel22.Controls.Add(this.label39);
+            this.flowLayoutPanel22.Controls.Add(this.label40);
+            this.flowLayoutPanel22.Controls.Add(this.label45);
+            this.flowLayoutPanel22.Location = new System.Drawing.Point(3, 49);
+            this.flowLayoutPanel22.Name = "flowLayoutPanel22";
+            this.flowLayoutPanel22.Size = new System.Drawing.Size(486, 17);
+            this.flowLayoutPanel22.TabIndex = 3;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label39.Location = new System.Drawing.Point(3, 0);
+            this.label39.MinimumSize = new System.Drawing.Size(240, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(240, 13);
+            this.label39.TabIndex = 0;
+            this.label39.Text = "Множитель процессора";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label40
+            // 
+            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label40.AutoSize = true;
+            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label40.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label40.Location = new System.Drawing.Point(249, 0);
+            this.label40.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(100, 15);
+            this.label40.TabIndex = 1;
+            this.label40.Text = "ж 31.0 ( 8 - 32 )";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label45
+            // 
+            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label45.AutoSize = true;
+            this.label45.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label45.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label45.Location = new System.Drawing.Point(355, 0);
+            this.label45.MinimumSize = new System.Drawing.Size(60, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(60, 15);
+            this.label45.TabIndex = 3;
+            this.label45.Text = "1-way";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel23
+            // 
+            this.flowLayoutPanel23.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel23.Controls.Add(this.label41);
+            this.flowLayoutPanel23.Controls.Add(this.label42);
+            this.flowLayoutPanel23.Controls.Add(this.label46);
+            this.flowLayoutPanel23.Location = new System.Drawing.Point(3, 72);
+            this.flowLayoutPanel23.Name = "flowLayoutPanel23";
+            this.flowLayoutPanel23.Size = new System.Drawing.Size(486, 17);
+            this.flowLayoutPanel23.TabIndex = 4;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label41.Location = new System.Drawing.Point(3, 0);
+            this.label41.MinimumSize = new System.Drawing.Size(240, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(240, 13);
+            this.label41.TabIndex = 0;
+            this.label41.Text = "Множитель процессора";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label42
+            // 
+            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label42.AutoSize = true;
+            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label42.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label42.Location = new System.Drawing.Point(249, 0);
+            this.label42.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(100, 15);
+            this.label42.TabIndex = 1;
+            this.label42.Text = "ж 31.0 ( 8 - 32 )";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label46
+            // 
+            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label46.AutoSize = true;
+            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label46.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label46.Location = new System.Drawing.Point(355, 0);
+            this.label46.MinimumSize = new System.Drawing.Size(60, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(60, 15);
+            this.label46.TabIndex = 3;
+            this.label46.Text = "1-way";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBoxClocks
+            // 
+            this.groupBoxClocks.Controls.Add(this.flowLayoutPanel14);
+            this.groupBoxClocks.Location = new System.Drawing.Point(2, 219);
+            this.groupBoxClocks.Name = "groupBoxClocks";
+            this.groupBoxClocks.Size = new System.Drawing.Size(273, 109);
+            this.groupBoxClocks.TabIndex = 1;
+            this.groupBoxClocks.TabStop = false;
+            this.groupBoxClocks.Text = "Процессор";
+            // 
+            // flowLayoutPanel14
+            // 
+            this.flowLayoutPanel14.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel14.Controls.Add(this.flowLayoutPanel16);
+            this.flowLayoutPanel14.Controls.Add(this.flowLayoutPanel15);
+            this.flowLayoutPanel14.Controls.Add(this.flowLayoutPanel17);
+            this.flowLayoutPanel14.Controls.Add(this.flowLayoutPanel18);
+            this.flowLayoutPanel14.Location = new System.Drawing.Point(2, 12);
+            this.flowLayoutPanel14.Name = "flowLayoutPanel14";
+            this.flowLayoutPanel14.Size = new System.Drawing.Size(770, 205);
+            this.flowLayoutPanel14.TabIndex = 1;
+            // 
+            // flowLayoutPanel16
+            // 
+            this.flowLayoutPanel16.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel16.Controls.Add(this.label29);
+            this.flowLayoutPanel16.Controls.Add(this.label30);
+            this.flowLayoutPanel16.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel16.Name = "flowLayoutPanel16";
+            this.flowLayoutPanel16.Size = new System.Drawing.Size(386, 17);
+            this.flowLayoutPanel16.TabIndex = 1;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label29.Location = new System.Drawing.Point(3, 0);
+            this.label29.MinimumSize = new System.Drawing.Size(140, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(140, 13);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "Множитель процессора";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label30
+            // 
+            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label30.AutoSize = true;
+            this.label30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label30.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label30.Location = new System.Drawing.Point(149, 0);
+            this.label30.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(100, 15);
+            this.label30.TabIndex = 1;
+            this.label30.Text = "ж 31.0 ( 8 - 32 )";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel15
+            // 
+            this.flowLayoutPanel15.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel15.Controls.Add(this.label27);
+            this.flowLayoutPanel15.Controls.Add(this.label28);
+            this.flowLayoutPanel15.Location = new System.Drawing.Point(3, 26);
+            this.flowLayoutPanel15.Name = "flowLayoutPanel15";
+            this.flowLayoutPanel15.Size = new System.Drawing.Size(386, 17);
+            this.flowLayoutPanel15.TabIndex = 2;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label27.Location = new System.Drawing.Point(3, 0);
+            this.label27.MinimumSize = new System.Drawing.Size(140, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(140, 13);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Множитель процессора";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label28
+            // 
+            this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label28.AutoSize = true;
+            this.label28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label28.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label28.Location = new System.Drawing.Point(149, 0);
+            this.label28.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(100, 15);
+            this.label28.TabIndex = 1;
+            this.label28.Text = "ж 31.0 ( 8 - 32 )";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel17
+            // 
+            this.flowLayoutPanel17.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel17.Controls.Add(this.label31);
+            this.flowLayoutPanel17.Controls.Add(this.label32);
+            this.flowLayoutPanel17.Location = new System.Drawing.Point(3, 49);
+            this.flowLayoutPanel17.Name = "flowLayoutPanel17";
+            this.flowLayoutPanel17.Size = new System.Drawing.Size(386, 17);
+            this.flowLayoutPanel17.TabIndex = 3;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label31.Location = new System.Drawing.Point(3, 0);
+            this.label31.MinimumSize = new System.Drawing.Size(140, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(140, 13);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "Множитель процессора";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label32
+            // 
+            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label32.AutoSize = true;
+            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label32.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label32.Location = new System.Drawing.Point(149, 0);
+            this.label32.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(100, 15);
+            this.label32.TabIndex = 1;
+            this.label32.Text = "ж 31.0 ( 8 - 32 )";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel18
+            // 
+            this.flowLayoutPanel18.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel18.Controls.Add(this.label33);
+            this.flowLayoutPanel18.Controls.Add(this.label34);
+            this.flowLayoutPanel18.Location = new System.Drawing.Point(3, 72);
+            this.flowLayoutPanel18.Name = "flowLayoutPanel18";
+            this.flowLayoutPanel18.Size = new System.Drawing.Size(386, 17);
+            this.flowLayoutPanel18.TabIndex = 4;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label33.Location = new System.Drawing.Point(3, 0);
+            this.label33.MinimumSize = new System.Drawing.Size(140, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(140, 13);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Множитель процессора";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label34
+            // 
+            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label34.AutoSize = true;
+            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label34.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label34.Location = new System.Drawing.Point(149, 0);
+            this.label34.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(100, 15);
+            this.label34.TabIndex = 1;
+            this.label34.Text = "ж 31.0 ( 8 - 32 )";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // groupBoxSelectProc
             // 
             this.groupBoxSelectProc.Controls.Add(this.flowLayoutPanel24);
@@ -1653,65 +1659,18 @@
             this.tabPageCaches.TabIndex = 1;
             this.tabPageCaches.Text = "Кэш";
             // 
-            // tabPageMainboard
+            // flowLayoutPanel25
             // 
-            this.tabPageMainboard.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageMainboard.Controls.Add(this.flowLayoutPanel40);
-            this.tabPageMainboard.Location = new System.Drawing.Point(4, 22);
-            this.tabPageMainboard.Name = "tabPageMainboard";
-            this.tabPageMainboard.Size = new System.Drawing.Size(790, 393);
-            this.tabPageMainboard.TabIndex = 2;
-            this.tabPageMainboard.Text = "Плата";
-            // 
-            // tabPageMemory
-            // 
-            this.tabPageMemory.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageMemory.Controls.Add(this.flowLayoutPanel53);
-            this.tabPageMemory.Location = new System.Drawing.Point(4, 22);
-            this.tabPageMemory.Name = "tabPageMemory";
-            this.tabPageMemory.Size = new System.Drawing.Size(790, 393);
-            this.tabPageMemory.TabIndex = 3;
-            this.tabPageMemory.Text = "Память";
-            // 
-            // tabPageSpd
-            // 
-            this.tabPageSpd.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageSpd.Controls.Add(this.flowLayoutPanel71);
-            this.tabPageSpd.Location = new System.Drawing.Point(4, 22);
-            this.tabPageSpd.Name = "tabPageSpd";
-            this.tabPageSpd.Size = new System.Drawing.Size(790, 393);
-            this.tabPageSpd.TabIndex = 4;
-            this.tabPageSpd.Text = "SPD";
-            // 
-            // tabPageGraphics
-            // 
-            this.tabPageGraphics.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageGraphics.Controls.Add(this.flowLayoutPanel89);
-            this.tabPageGraphics.Location = new System.Drawing.Point(4, 22);
-            this.tabPageGraphics.Name = "tabPageGraphics";
-            this.tabPageGraphics.Size = new System.Drawing.Size(790, 393);
-            this.tabPageGraphics.TabIndex = 5;
-            this.tabPageGraphics.Text = "Графика";
-            // 
-            // tabPageBench
-            // 
-            this.tabPageBench.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPageBench.Controls.Add(this.flowLayoutPanel103);
-            this.tabPageBench.Location = new System.Drawing.Point(4, 22);
-            this.tabPageBench.Name = "tabPageBench";
-            this.tabPageBench.Size = new System.Drawing.Size(790, 393);
-            this.tabPageBench.TabIndex = 6;
-            this.tabPageBench.Text = "Тест";
-            // 
-            // buttonClose
-            // 
-            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonClose.Location = new System.Drawing.Point(675, 421);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(119, 23);
-            this.buttonClose.TabIndex = 1;
-            this.buttonClose.Text = "Закрыть";
-            this.buttonClose.UseVisualStyleBackColor = true;
+            this.flowLayoutPanel25.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel25.Controls.Add(this.groupBox1);
+            this.flowLayoutPanel25.Controls.Add(this.groupBox2);
+            this.flowLayoutPanel25.Controls.Add(this.groupBox3);
+            this.flowLayoutPanel25.Controls.Add(this.groupBox4);
+            this.flowLayoutPanel25.Controls.Add(this.groupBox5);
+            this.flowLayoutPanel25.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel25.Name = "flowLayoutPanel25";
+            this.flowLayoutPanel25.Size = new System.Drawing.Size(790, 393);
+            this.flowLayoutPanel25.TabIndex = 4;
             // 
             // groupBox1
             // 
@@ -1723,6 +1682,42 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Процессор";
+            // 
+            // flowLayoutPanel27
+            // 
+            this.flowLayoutPanel27.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel27.Controls.Add(this.label50);
+            this.flowLayoutPanel27.Controls.Add(this.label51);
+            this.flowLayoutPanel27.Location = new System.Drawing.Point(3, 37);
+            this.flowLayoutPanel27.Name = "flowLayoutPanel27";
+            this.flowLayoutPanel27.Size = new System.Drawing.Size(767, 17);
+            this.flowLayoutPanel27.TabIndex = 2;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label50.Location = new System.Drawing.Point(3, 0);
+            this.label50.MinimumSize = new System.Drawing.Size(200, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(200, 13);
+            this.label50.TabIndex = 0;
+            this.label50.Text = "Объем кэш-памяти";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label51
+            // 
+            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label51.AutoSize = true;
+            this.label51.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label51.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label51.Location = new System.Drawing.Point(209, 0);
+            this.label51.MinimumSize = new System.Drawing.Size(545, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(545, 15);
+            this.label51.TabIndex = 1;
+            this.label51.Text = "ж 31.0 ( 8 - 32 )";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel26
             // 
@@ -1774,55 +1769,6 @@
             this.label49.TabIndex = 2;
             this.label49.Text = "1-way";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel27
-            // 
-            this.flowLayoutPanel27.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel27.Controls.Add(this.label50);
-            this.flowLayoutPanel27.Controls.Add(this.label51);
-            this.flowLayoutPanel27.Location = new System.Drawing.Point(3, 37);
-            this.flowLayoutPanel27.Name = "flowLayoutPanel27";
-            this.flowLayoutPanel27.Size = new System.Drawing.Size(767, 17);
-            this.flowLayoutPanel27.TabIndex = 2;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label50.Location = new System.Drawing.Point(3, 0);
-            this.label50.MinimumSize = new System.Drawing.Size(200, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(200, 13);
-            this.label50.TabIndex = 0;
-            this.label50.Text = "Объем кэш-памяти";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label51
-            // 
-            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label51.AutoSize = true;
-            this.label51.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label51.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label51.Location = new System.Drawing.Point(209, 0);
-            this.label51.MinimumSize = new System.Drawing.Size(545, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(545, 15);
-            this.label51.TabIndex = 1;
-            this.label51.Text = "ж 31.0 ( 8 - 32 )";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel25
-            // 
-            this.flowLayoutPanel25.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel25.Controls.Add(this.groupBox1);
-            this.flowLayoutPanel25.Controls.Add(this.groupBox2);
-            this.flowLayoutPanel25.Controls.Add(this.groupBox3);
-            this.flowLayoutPanel25.Controls.Add(this.groupBox4);
-            this.flowLayoutPanel25.Controls.Add(this.groupBox5);
-            this.flowLayoutPanel25.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel25.Name = "flowLayoutPanel25";
-            this.flowLayoutPanel25.Size = new System.Drawing.Size(790, 393);
-            this.flowLayoutPanel25.TabIndex = 4;
             // 
             // groupBox2
             // 
@@ -2130,6 +2076,42 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Процессор";
             // 
+            // flowLayoutPanel39
+            // 
+            this.flowLayoutPanel39.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel39.Controls.Add(this.label78);
+            this.flowLayoutPanel39.Controls.Add(this.label79);
+            this.flowLayoutPanel39.Location = new System.Drawing.Point(3, 55);
+            this.flowLayoutPanel39.Name = "flowLayoutPanel39";
+            this.flowLayoutPanel39.Size = new System.Drawing.Size(767, 17);
+            this.flowLayoutPanel39.TabIndex = 3;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label78.Location = new System.Drawing.Point(3, 0);
+            this.label78.MinimumSize = new System.Drawing.Size(200, 0);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(200, 13);
+            this.label78.TabIndex = 0;
+            this.label78.Text = "Объем кэш-памяти";
+            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label79
+            // 
+            this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label79.AutoSize = true;
+            this.label79.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label79.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label79.Location = new System.Drawing.Point(209, 0);
+            this.label79.MinimumSize = new System.Drawing.Size(350, 0);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(350, 15);
+            this.label79.TabIndex = 1;
+            this.label79.Text = "ж 31.0 ( 8 - 32 )";
+            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // flowLayoutPanel34
             // 
             this.flowLayoutPanel34.BackColor = System.Drawing.Color.Transparent;
@@ -2217,41 +2199,15 @@
             this.label77.Text = "1-way";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // flowLayoutPanel39
+            // tabPageMainboard
             // 
-            this.flowLayoutPanel39.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel39.Controls.Add(this.label78);
-            this.flowLayoutPanel39.Controls.Add(this.label79);
-            this.flowLayoutPanel39.Location = new System.Drawing.Point(3, 55);
-            this.flowLayoutPanel39.Name = "flowLayoutPanel39";
-            this.flowLayoutPanel39.Size = new System.Drawing.Size(767, 17);
-            this.flowLayoutPanel39.TabIndex = 3;
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label78.Location = new System.Drawing.Point(3, 0);
-            this.label78.MinimumSize = new System.Drawing.Size(200, 0);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(200, 13);
-            this.label78.TabIndex = 0;
-            this.label78.Text = "Объем кэш-памяти";
-            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label79
-            // 
-            this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label79.AutoSize = true;
-            this.label79.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label79.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label79.Location = new System.Drawing.Point(209, 0);
-            this.label79.MinimumSize = new System.Drawing.Size(350, 0);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(350, 15);
-            this.label79.TabIndex = 1;
-            this.label79.Text = "ж 31.0 ( 8 - 32 )";
-            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tabPageMainboard.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageMainboard.Controls.Add(this.flowLayoutPanel40);
+            this.tabPageMainboard.Location = new System.Drawing.Point(4, 22);
+            this.tabPageMainboard.Name = "tabPageMainboard";
+            this.tabPageMainboard.Size = new System.Drawing.Size(790, 393);
+            this.tabPageMainboard.TabIndex = 2;
+            this.tabPageMainboard.Text = "Плата";
             // 
             // flowLayoutPanel40
             // 
@@ -2263,154 +2219,6 @@
             this.flowLayoutPanel40.Name = "flowLayoutPanel40";
             this.flowLayoutPanel40.Size = new System.Drawing.Size(790, 393);
             this.flowLayoutPanel40.TabIndex = 5;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.flowLayoutPanel42);
-            this.groupBox6.Controls.Add(this.flowLayoutPanel41);
-            this.groupBox6.Controls.Add(this.flowLayoutPanel51);
-            this.groupBox6.Location = new System.Drawing.Point(3, 147);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(781, 92);
-            this.groupBox6.TabIndex = 3;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Процессор";
-            // 
-            // flowLayoutPanel41
-            // 
-            this.flowLayoutPanel41.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel41.Controls.Add(this.label52);
-            this.flowLayoutPanel41.Controls.Add(this.label80);
-            this.flowLayoutPanel41.Location = new System.Drawing.Point(2, 38);
-            this.flowLayoutPanel41.Name = "flowLayoutPanel41";
-            this.flowLayoutPanel41.Size = new System.Drawing.Size(767, 17);
-            this.flowLayoutPanel41.TabIndex = 2;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label52.Location = new System.Drawing.Point(3, 0);
-            this.label52.MinimumSize = new System.Drawing.Size(200, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(200, 13);
-            this.label52.TabIndex = 0;
-            this.label52.Text = "Объем кэш-памяти";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label80
-            // 
-            this.label80.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label80.AutoSize = true;
-            this.label80.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label80.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label80.Location = new System.Drawing.Point(209, 0);
-            this.label80.MinimumSize = new System.Drawing.Size(545, 0);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(545, 15);
-            this.label80.TabIndex = 1;
-            this.label80.Text = "ж 31.0 ( 8 - 32 )";
-            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.flowLayoutPanel52);
-            this.groupBox7.Controls.Add(this.flowLayoutPanel44);
-            this.groupBox7.Controls.Add(this.flowLayoutPanel43);
-            this.groupBox7.Location = new System.Drawing.Point(3, 245);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(781, 87);
-            this.groupBox7.TabIndex = 4;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Процессор";
-            // 
-            // flowLayoutPanel43
-            // 
-            this.flowLayoutPanel43.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel43.Controls.Add(this.label84);
-            this.flowLayoutPanel43.Controls.Add(this.label85);
-            this.flowLayoutPanel43.Location = new System.Drawing.Point(0, 19);
-            this.flowLayoutPanel43.Name = "flowLayoutPanel43";
-            this.flowLayoutPanel43.Size = new System.Drawing.Size(767, 17);
-            this.flowLayoutPanel43.TabIndex = 2;
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label84.Location = new System.Drawing.Point(3, 0);
-            this.label84.MinimumSize = new System.Drawing.Size(200, 0);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(200, 13);
-            this.label84.TabIndex = 0;
-            this.label84.Text = "Объем кэш-памяти";
-            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label85
-            // 
-            this.label85.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label85.AutoSize = true;
-            this.label85.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label85.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label85.Location = new System.Drawing.Point(209, 0);
-            this.label85.MinimumSize = new System.Drawing.Size(545, 0);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(545, 15);
-            this.label85.TabIndex = 1;
-            this.label85.Text = "ж 31.0 ( 8 - 32 )";
-            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel44
-            // 
-            this.flowLayoutPanel44.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel44.Controls.Add(this.label86);
-            this.flowLayoutPanel44.Controls.Add(this.label87);
-            this.flowLayoutPanel44.Controls.Add(this.label106);
-            this.flowLayoutPanel44.Controls.Add(this.label88);
-            this.flowLayoutPanel44.Location = new System.Drawing.Point(0, 42);
-            this.flowLayoutPanel44.Name = "flowLayoutPanel44";
-            this.flowLayoutPanel44.Size = new System.Drawing.Size(767, 17);
-            this.flowLayoutPanel44.TabIndex = 1;
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label86.Location = new System.Drawing.Point(3, 0);
-            this.label86.MinimumSize = new System.Drawing.Size(200, 0);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(200, 13);
-            this.label86.TabIndex = 0;
-            this.label86.Text = "Объем кэш-памяти";
-            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label87
-            // 
-            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label87.AutoSize = true;
-            this.label87.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label87.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label87.Location = new System.Drawing.Point(209, 0);
-            this.label87.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(100, 15);
-            this.label87.TabIndex = 1;
-            this.label87.Text = "ж 31.0 ( 8 - 32 )";
-            this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label88
-            // 
-            this.label88.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label88.AutoSize = true;
-            this.label88.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label88.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label88.Location = new System.Drawing.Point(591, 0);
-            this.label88.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(100, 15);
-            this.label88.TabIndex = 2;
-            this.label88.Text = "1-way";
-            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox8
             // 
@@ -2511,6 +2319,20 @@
             this.label92.Text = "Haxwell";
             this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label93
+            // 
+            this.label93.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label93.AutoSize = true;
+            this.label93.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label93.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label93.Location = new System.Drawing.Point(415, 0);
+            this.label93.MinimumSize = new System.Drawing.Size(200, 0);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(200, 15);
+            this.label93.TabIndex = 2;
+            this.label93.Text = "Haxwell";
+            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // flowLayoutPanel49
             // 
             this.flowLayoutPanel49.BackColor = System.Drawing.Color.Transparent;
@@ -2549,20 +2371,6 @@
             this.label96.TabIndex = 1;
             this.label96.Text = "~Intel Core HD228";
             this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label93
-            // 
-            this.label93.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label93.AutoSize = true;
-            this.label93.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label93.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label93.Location = new System.Drawing.Point(415, 0);
-            this.label93.MinimumSize = new System.Drawing.Size(200, 0);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(200, 15);
-            this.label93.TabIndex = 2;
-            this.label93.Text = "Haxwell";
-            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label94
             // 
@@ -2734,6 +2542,18 @@
             this.label104.Text = "~Intel Core HD228";
             this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.flowLayoutPanel42);
+            this.groupBox6.Controls.Add(this.flowLayoutPanel41);
+            this.groupBox6.Controls.Add(this.flowLayoutPanel51);
+            this.groupBox6.Location = new System.Drawing.Point(3, 147);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(781, 92);
+            this.groupBox6.TabIndex = 3;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Процессор";
+            // 
             // flowLayoutPanel42
             // 
             this.flowLayoutPanel42.BackColor = System.Drawing.Color.Transparent;
@@ -2769,6 +2589,42 @@
             this.label82.TabIndex = 1;
             this.label82.Text = "ж 31.0 ( 8 - 32 )";
             this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel41
+            // 
+            this.flowLayoutPanel41.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel41.Controls.Add(this.label52);
+            this.flowLayoutPanel41.Controls.Add(this.label80);
+            this.flowLayoutPanel41.Location = new System.Drawing.Point(2, 38);
+            this.flowLayoutPanel41.Name = "flowLayoutPanel41";
+            this.flowLayoutPanel41.Size = new System.Drawing.Size(767, 17);
+            this.flowLayoutPanel41.TabIndex = 2;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label52.Location = new System.Drawing.Point(3, 0);
+            this.label52.MinimumSize = new System.Drawing.Size(200, 0);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(200, 13);
+            this.label52.TabIndex = 0;
+            this.label52.Text = "Объем кэш-памяти";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label80
+            // 
+            this.label80.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label80.AutoSize = true;
+            this.label80.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label80.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label80.Location = new System.Drawing.Point(209, 0);
+            this.label80.MinimumSize = new System.Drawing.Size(545, 0);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(545, 15);
+            this.label80.TabIndex = 1;
+            this.label80.Text = "ж 31.0 ( 8 - 32 )";
+            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel51
             // 
@@ -2806,17 +2662,17 @@
             this.label105.Text = "ж 31.0 ( 8 - 32 )";
             this.label105.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label106
+            // groupBox7
             // 
-            this.label106.AutoSize = true;
-            this.label106.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label106.Location = new System.Drawing.Point(315, 0);
-            this.label106.MinimumSize = new System.Drawing.Size(270, 0);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(270, 13);
-            this.label106.TabIndex = 3;
-            this.label106.Text = "Максимально поддерживаемый режим шины";
-            this.label106.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.groupBox7.Controls.Add(this.flowLayoutPanel52);
+            this.groupBox7.Controls.Add(this.flowLayoutPanel44);
+            this.groupBox7.Controls.Add(this.flowLayoutPanel43);
+            this.groupBox7.Location = new System.Drawing.Point(3, 245);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(781, 87);
+            this.groupBox7.TabIndex = 4;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Процессор";
             // 
             // flowLayoutPanel52
             // 
@@ -2853,6 +2709,116 @@
             this.label108.TabIndex = 1;
             this.label108.Text = "ж 31.0 ( 8 - 32 )";
             this.label108.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel44
+            // 
+            this.flowLayoutPanel44.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel44.Controls.Add(this.label86);
+            this.flowLayoutPanel44.Controls.Add(this.label87);
+            this.flowLayoutPanel44.Controls.Add(this.label106);
+            this.flowLayoutPanel44.Controls.Add(this.label88);
+            this.flowLayoutPanel44.Location = new System.Drawing.Point(0, 42);
+            this.flowLayoutPanel44.Name = "flowLayoutPanel44";
+            this.flowLayoutPanel44.Size = new System.Drawing.Size(767, 17);
+            this.flowLayoutPanel44.TabIndex = 1;
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label86.Location = new System.Drawing.Point(3, 0);
+            this.label86.MinimumSize = new System.Drawing.Size(200, 0);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(200, 13);
+            this.label86.TabIndex = 0;
+            this.label86.Text = "Объем кэш-памяти";
+            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label87
+            // 
+            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label87.AutoSize = true;
+            this.label87.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label87.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label87.Location = new System.Drawing.Point(209, 0);
+            this.label87.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(100, 15);
+            this.label87.TabIndex = 1;
+            this.label87.Text = "ж 31.0 ( 8 - 32 )";
+            this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label106.Location = new System.Drawing.Point(315, 0);
+            this.label106.MinimumSize = new System.Drawing.Size(270, 0);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(270, 13);
+            this.label106.TabIndex = 3;
+            this.label106.Text = "Максимально поддерживаемый режим шины";
+            this.label106.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label88
+            // 
+            this.label88.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label88.AutoSize = true;
+            this.label88.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label88.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label88.Location = new System.Drawing.Point(591, 0);
+            this.label88.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(100, 15);
+            this.label88.TabIndex = 2;
+            this.label88.Text = "1-way";
+            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel43
+            // 
+            this.flowLayoutPanel43.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel43.Controls.Add(this.label84);
+            this.flowLayoutPanel43.Controls.Add(this.label85);
+            this.flowLayoutPanel43.Location = new System.Drawing.Point(0, 19);
+            this.flowLayoutPanel43.Name = "flowLayoutPanel43";
+            this.flowLayoutPanel43.Size = new System.Drawing.Size(767, 17);
+            this.flowLayoutPanel43.TabIndex = 2;
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label84.Location = new System.Drawing.Point(3, 0);
+            this.label84.MinimumSize = new System.Drawing.Size(200, 0);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(200, 13);
+            this.label84.TabIndex = 0;
+            this.label84.Text = "Объем кэш-памяти";
+            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label85
+            // 
+            this.label85.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label85.AutoSize = true;
+            this.label85.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label85.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label85.Location = new System.Drawing.Point(209, 0);
+            this.label85.MinimumSize = new System.Drawing.Size(545, 0);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(545, 15);
+            this.label85.TabIndex = 1;
+            this.label85.Text = "ж 31.0 ( 8 - 32 )";
+            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tabPageMemory
+            // 
+            this.tabPageMemory.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageMemory.Controls.Add(this.flowLayoutPanel53);
+            this.tabPageMemory.Location = new System.Drawing.Point(4, 22);
+            this.tabPageMemory.Name = "tabPageMemory";
+            this.tabPageMemory.Size = new System.Drawing.Size(790, 393);
+            this.tabPageMemory.TabIndex = 3;
+            this.tabPageMemory.Text = "Память";
             // 
             // flowLayoutPanel53
             // 
@@ -3120,6 +3086,42 @@
             this.label128.TabIndex = 3;
             this.label128.Text = "Dual";
             this.label128.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel69
+            // 
+            this.flowLayoutPanel69.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel69.Controls.Add(this.label141);
+            this.flowLayoutPanel69.Controls.Add(this.label142);
+            this.flowLayoutPanel69.Location = new System.Drawing.Point(3, 18);
+            this.flowLayoutPanel69.Name = "flowLayoutPanel69";
+            this.flowLayoutPanel69.Size = new System.Drawing.Size(769, 17);
+            this.flowLayoutPanel69.TabIndex = 4;
+            // 
+            // label141
+            // 
+            this.label141.AutoSize = true;
+            this.label141.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label141.Location = new System.Drawing.Point(3, 0);
+            this.label141.MinimumSize = new System.Drawing.Size(643, 0);
+            this.label141.Name = "label141";
+            this.label141.Size = new System.Drawing.Size(643, 13);
+            this.label141.TabIndex = 2;
+            this.label141.Text = "Число каналов";
+            this.label141.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label142
+            // 
+            this.label142.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label142.AutoSize = true;
+            this.label142.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label142.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label142.Location = new System.Drawing.Point(652, 0);
+            this.label142.MinimumSize = new System.Drawing.Size(110, 0);
+            this.label142.Name = "label142";
+            this.label142.Size = new System.Drawing.Size(110, 15);
+            this.label142.TabIndex = 3;
+            this.label142.Text = "Dual";
+            this.label142.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel59
             // 
@@ -3446,42 +3448,6 @@
             this.label140.Text = "Dual";
             this.label140.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // flowLayoutPanel69
-            // 
-            this.flowLayoutPanel69.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel69.Controls.Add(this.label141);
-            this.flowLayoutPanel69.Controls.Add(this.label142);
-            this.flowLayoutPanel69.Location = new System.Drawing.Point(3, 18);
-            this.flowLayoutPanel69.Name = "flowLayoutPanel69";
-            this.flowLayoutPanel69.Size = new System.Drawing.Size(769, 17);
-            this.flowLayoutPanel69.TabIndex = 4;
-            // 
-            // label141
-            // 
-            this.label141.AutoSize = true;
-            this.label141.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label141.Location = new System.Drawing.Point(3, 0);
-            this.label141.MinimumSize = new System.Drawing.Size(643, 0);
-            this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(643, 13);
-            this.label141.TabIndex = 2;
-            this.label141.Text = "Число каналов";
-            this.label141.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label142
-            // 
-            this.label142.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label142.AutoSize = true;
-            this.label142.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label142.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label142.Location = new System.Drawing.Point(652, 0);
-            this.label142.MinimumSize = new System.Drawing.Size(110, 0);
-            this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(110, 15);
-            this.label142.TabIndex = 3;
-            this.label142.Text = "Dual";
-            this.label142.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // flowLayoutPanel70
             // 
             this.flowLayoutPanel70.BackColor = System.Drawing.Color.Transparent;
@@ -3518,6 +3484,16 @@
             this.label144.Text = "Dual";
             this.label144.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tabPageSpd
+            // 
+            this.tabPageSpd.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageSpd.Controls.Add(this.flowLayoutPanel71);
+            this.tabPageSpd.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSpd.Name = "tabPageSpd";
+            this.tabPageSpd.Size = new System.Drawing.Size(790, 393);
+            this.tabPageSpd.TabIndex = 4;
+            this.tabPageSpd.Text = "SPD";
+            // 
             // flowLayoutPanel71
             // 
             this.flowLayoutPanel71.BackColor = System.Drawing.Color.Transparent;
@@ -3540,6 +3516,16 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Процессор";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            " Slot #n"});
+            this.comboBox2.Location = new System.Drawing.Point(5, 18);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(150, 21);
+            this.comboBox2.TabIndex = 4;
+            // 
             // label150
             // 
             this.label150.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -3553,85 +3539,6 @@
             this.label150.TabIndex = 1;
             this.label150.Text = "DDR3";
             this.label150.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.flowLayoutPanel76);
-            this.groupBox12.Location = new System.Drawing.Point(3, 181);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(778, 212);
-            this.groupBox12.TabIndex = 6;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Процессор";
-            // 
-            // flowLayoutPanel76
-            // 
-            this.flowLayoutPanel76.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel76.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel79);
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel80);
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel81);
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel82);
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel83);
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel84);
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel85);
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel86);
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel87);
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel88);
-            this.flowLayoutPanel76.Location = new System.Drawing.Point(2, 12);
-            this.flowLayoutPanel76.Name = "flowLayoutPanel76";
-            this.flowLayoutPanel76.Size = new System.Drawing.Size(770, 194);
-            this.flowLayoutPanel76.TabIndex = 1;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            " Slot #n"});
-            this.comboBox2.Location = new System.Drawing.Point(5, 18);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 21);
-            this.comboBox2.TabIndex = 4;
-            // 
-            // flowLayoutPanel73
-            // 
-            this.flowLayoutPanel73.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel73.Controls.Add(this.label145);
-            this.flowLayoutPanel73.Controls.Add(this.label146);
-            this.flowLayoutPanel73.Controls.Add(this.label147);
-            this.flowLayoutPanel73.Controls.Add(this.label148);
-            this.flowLayoutPanel73.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel73.Name = "flowLayoutPanel73";
-            this.flowLayoutPanel73.Size = new System.Drawing.Size(769, 17);
-            this.flowLayoutPanel73.TabIndex = 2;
-            // 
-            // label146
-            // 
-            this.label146.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label146.AutoSize = true;
-            this.label146.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label146.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label146.Location = new System.Drawing.Point(229, 0);
-            this.label146.MinimumSize = new System.Drawing.Size(150, 0);
-            this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(150, 15);
-            this.label146.TabIndex = 1;
-            this.label146.Text = "ЗСОА10031(;412аас)14";
-            this.label146.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label145
-            // 
-            this.label145.AutoSize = true;
-            this.label145.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label145.Location = new System.Drawing.Point(3, 0);
-            this.label145.MinimumSize = new System.Drawing.Size(220, 0);
-            this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(220, 13);
-            this.label145.TabIndex = 0;
-            this.label145.Text = "Максимальная пропускная способность";
-            this.label145.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // flowLayoutPanel72
             // 
@@ -3648,6 +3555,44 @@
             this.flowLayoutPanel72.Name = "flowLayoutPanel72";
             this.flowLayoutPanel72.Size = new System.Drawing.Size(770, 121);
             this.flowLayoutPanel72.TabIndex = 1;
+            // 
+            // flowLayoutPanel73
+            // 
+            this.flowLayoutPanel73.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel73.Controls.Add(this.label145);
+            this.flowLayoutPanel73.Controls.Add(this.label146);
+            this.flowLayoutPanel73.Controls.Add(this.label147);
+            this.flowLayoutPanel73.Controls.Add(this.label148);
+            this.flowLayoutPanel73.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel73.Name = "flowLayoutPanel73";
+            this.flowLayoutPanel73.Size = new System.Drawing.Size(769, 17);
+            this.flowLayoutPanel73.TabIndex = 2;
+            // 
+            // label145
+            // 
+            this.label145.AutoSize = true;
+            this.label145.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label145.Location = new System.Drawing.Point(3, 0);
+            this.label145.MinimumSize = new System.Drawing.Size(220, 0);
+            this.label145.Name = "label145";
+            this.label145.Size = new System.Drawing.Size(220, 13);
+            this.label145.TabIndex = 0;
+            this.label145.Text = "Максимальная пропускная способность";
+            this.label145.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label146
+            // 
+            this.label146.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label146.AutoSize = true;
+            this.label146.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label146.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label146.Location = new System.Drawing.Point(229, 0);
+            this.label146.MinimumSize = new System.Drawing.Size(150, 0);
+            this.label146.Name = "label146";
+            this.label146.Size = new System.Drawing.Size(150, 15);
+            this.label146.TabIndex = 1;
+            this.label146.Text = "ЗСОА10031(;412аас)14";
+            this.label146.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label147
             // 
@@ -3867,6 +3812,182 @@
             this.label161.Text = "Ыштпду";
             this.label161.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel78
+            // 
+            this.flowLayoutPanel78.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel78.Controls.Add(this.label162);
+            this.flowLayoutPanel78.Controls.Add(this.label163);
+            this.flowLayoutPanel78.Controls.Add(this.label164);
+            this.flowLayoutPanel78.Controls.Add(this.label165);
+            this.flowLayoutPanel78.Location = new System.Drawing.Point(3, 95);
+            this.flowLayoutPanel78.Name = "flowLayoutPanel78";
+            this.flowLayoutPanel78.Size = new System.Drawing.Size(769, 17);
+            this.flowLayoutPanel78.TabIndex = 6;
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label162.Location = new System.Drawing.Point(3, 0);
+            this.label162.MinimumSize = new System.Drawing.Size(220, 0);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(220, 13);
+            this.label162.TabIndex = 0;
+            this.label162.Text = "Максимальная пропускная способность";
+            this.label162.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label163
+            // 
+            this.label163.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label163.AutoSize = true;
+            this.label163.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label163.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label163.Location = new System.Drawing.Point(229, 0);
+            this.label163.MinimumSize = new System.Drawing.Size(150, 0);
+            this.label163.Name = "label163";
+            this.label163.Size = new System.Drawing.Size(150, 15);
+            this.label163.TabIndex = 1;
+            this.label163.Text = "ЗСОА10031(;412аас)14";
+            this.label163.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label164
+            // 
+            this.label164.AutoSize = true;
+            this.label164.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label164.Location = new System.Drawing.Point(385, 0);
+            this.label164.MinimumSize = new System.Drawing.Size(250, 0);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(250, 13);
+            this.label164.TabIndex = 2;
+            this.label164.Text = "Максимальная пропускная способность";
+            this.label164.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label165
+            // 
+            this.label165.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label165.AutoSize = true;
+            this.label165.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label165.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label165.Location = new System.Drawing.Point(641, 0);
+            this.label165.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label165.Name = "label165";
+            this.label165.Size = new System.Drawing.Size(100, 15);
+            this.label165.TabIndex = 3;
+            this.label165.Text = "Ыштпду";
+            this.label165.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.flowLayoutPanel76);
+            this.groupBox12.Location = new System.Drawing.Point(3, 181);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(778, 212);
+            this.groupBox12.TabIndex = 6;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Процессор";
+            // 
+            // flowLayoutPanel76
+            // 
+            this.flowLayoutPanel76.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel76.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel79);
+            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel80);
+            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel81);
+            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel82);
+            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel83);
+            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel84);
+            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel85);
+            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel86);
+            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel87);
+            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel88);
+            this.flowLayoutPanel76.Location = new System.Drawing.Point(2, 12);
+            this.flowLayoutPanel76.Name = "flowLayoutPanel76";
+            this.flowLayoutPanel76.Size = new System.Drawing.Size(770, 194);
+            this.flowLayoutPanel76.TabIndex = 1;
+            // 
+            // flowLayoutPanel79
+            // 
+            this.flowLayoutPanel79.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel79.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel79.Controls.Add(this.label171);
+            this.flowLayoutPanel79.Controls.Add(this.label172);
+            this.flowLayoutPanel79.Controls.Add(this.label173);
+            this.flowLayoutPanel79.Controls.Add(this.label174);
+            this.flowLayoutPanel79.Controls.Add(this.label175);
+            this.flowLayoutPanel79.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel79.MinimumSize = new System.Drawing.Size(0, 13);
+            this.flowLayoutPanel79.Name = "flowLayoutPanel79";
+            this.flowLayoutPanel79.Size = new System.Drawing.Size(770, 13);
+            this.flowLayoutPanel79.TabIndex = 11;
+            // 
+            // label171
+            // 
+            this.label171.AutoSize = true;
+            this.label171.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label171.Location = new System.Drawing.Point(3, 0);
+            this.label171.MinimumSize = new System.Drawing.Size(420, 0);
+            this.label171.Name = "label171";
+            this.label171.Size = new System.Drawing.Size(420, 13);
+            this.label171.TabIndex = 6;
+            this.label171.Text = " ";
+            this.label171.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label172
+            // 
+            this.label172.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label172.AutoSize = true;
+            this.label172.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label172.Location = new System.Drawing.Point(429, 0);
+            this.label172.MinimumSize = new System.Drawing.Size(80, 0);
+            this.label172.Name = "label172";
+            this.label172.Size = new System.Drawing.Size(80, 13);
+            this.label172.TabIndex = 7;
+            this.label172.Text = "Ыштпду";
+            this.label172.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label173
+            // 
+            this.label173.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label173.AutoSize = true;
+            this.label173.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label173.Location = new System.Drawing.Point(515, 0);
+            this.label173.MinimumSize = new System.Drawing.Size(80, 0);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(80, 13);
+            this.label173.TabIndex = 8;
+            this.label173.Text = "Ыштпду";
+            this.label173.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label174
+            // 
+            this.label174.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label174.AutoSize = true;
+            this.label174.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label174.Location = new System.Drawing.Point(601, 0);
+            this.label174.MinimumSize = new System.Drawing.Size(80, 0);
+            this.label174.Name = "label174";
+            this.label174.Size = new System.Drawing.Size(80, 13);
+            this.label174.TabIndex = 9;
+            this.label174.Text = "Ыштпду";
+            this.label174.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label175
+            // 
+            this.label175.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label175.AutoSize = true;
+            this.label175.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label175.Location = new System.Drawing.Point(687, 0);
+            this.label175.MinimumSize = new System.Drawing.Size(80, 0);
+            this.label175.Name = "label175";
+            this.label175.Size = new System.Drawing.Size(80, 13);
+            this.label175.TabIndex = 10;
+            this.label175.Text = "Ыштпду";
+            this.label175.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // flowLayoutPanel80
             // 
             this.flowLayoutPanel80.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -3952,87 +4073,6 @@
             this.label180.Text = "Ыштпду";
             this.label180.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label175
-            // 
-            this.label175.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label175.AutoSize = true;
-            this.label175.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label175.Location = new System.Drawing.Point(687, 0);
-            this.label175.MinimumSize = new System.Drawing.Size(80, 0);
-            this.label175.Name = "label175";
-            this.label175.Size = new System.Drawing.Size(80, 13);
-            this.label175.TabIndex = 10;
-            this.label175.Text = "Ыштпду";
-            this.label175.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label174
-            // 
-            this.label174.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label174.AutoSize = true;
-            this.label174.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label174.Location = new System.Drawing.Point(601, 0);
-            this.label174.MinimumSize = new System.Drawing.Size(80, 0);
-            this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(80, 13);
-            this.label174.TabIndex = 9;
-            this.label174.Text = "Ыштпду";
-            this.label174.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label173
-            // 
-            this.label173.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label173.AutoSize = true;
-            this.label173.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label173.Location = new System.Drawing.Point(515, 0);
-            this.label173.MinimumSize = new System.Drawing.Size(80, 0);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(80, 13);
-            this.label173.TabIndex = 8;
-            this.label173.Text = "Ыштпду";
-            this.label173.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label172
-            // 
-            this.label172.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label172.AutoSize = true;
-            this.label172.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label172.Location = new System.Drawing.Point(429, 0);
-            this.label172.MinimumSize = new System.Drawing.Size(80, 0);
-            this.label172.Name = "label172";
-            this.label172.Size = new System.Drawing.Size(80, 13);
-            this.label172.TabIndex = 7;
-            this.label172.Text = "Ыштпду";
-            this.label172.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label171
-            // 
-            this.label171.AutoSize = true;
-            this.label171.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label171.Location = new System.Drawing.Point(3, 0);
-            this.label171.MinimumSize = new System.Drawing.Size(420, 0);
-            this.label171.Name = "label171";
-            this.label171.Size = new System.Drawing.Size(420, 13);
-            this.label171.TabIndex = 6;
-            this.label171.Text = " ";
-            this.label171.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // flowLayoutPanel79
-            // 
-            this.flowLayoutPanel79.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel79.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel79.Controls.Add(this.label171);
-            this.flowLayoutPanel79.Controls.Add(this.label172);
-            this.flowLayoutPanel79.Controls.Add(this.label173);
-            this.flowLayoutPanel79.Controls.Add(this.label174);
-            this.flowLayoutPanel79.Controls.Add(this.label175);
-            this.flowLayoutPanel79.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel79.MinimumSize = new System.Drawing.Size(0, 13);
-            this.flowLayoutPanel79.Name = "flowLayoutPanel79";
-            this.flowLayoutPanel79.Size = new System.Drawing.Size(770, 13);
-            this.flowLayoutPanel79.TabIndex = 11;
-            // 
             // flowLayoutPanel81
             // 
             this.flowLayoutPanel81.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -4117,70 +4157,6 @@
             this.label170.TabIndex = 10;
             this.label170.Text = "Ыштпду";
             this.label170.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel78
-            // 
-            this.flowLayoutPanel78.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel78.Controls.Add(this.label162);
-            this.flowLayoutPanel78.Controls.Add(this.label163);
-            this.flowLayoutPanel78.Controls.Add(this.label164);
-            this.flowLayoutPanel78.Controls.Add(this.label165);
-            this.flowLayoutPanel78.Location = new System.Drawing.Point(3, 95);
-            this.flowLayoutPanel78.Name = "flowLayoutPanel78";
-            this.flowLayoutPanel78.Size = new System.Drawing.Size(769, 17);
-            this.flowLayoutPanel78.TabIndex = 6;
-            // 
-            // label162
-            // 
-            this.label162.AutoSize = true;
-            this.label162.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label162.Location = new System.Drawing.Point(3, 0);
-            this.label162.MinimumSize = new System.Drawing.Size(220, 0);
-            this.label162.Name = "label162";
-            this.label162.Size = new System.Drawing.Size(220, 13);
-            this.label162.TabIndex = 0;
-            this.label162.Text = "Максимальная пропускная способность";
-            this.label162.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label163
-            // 
-            this.label163.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label163.AutoSize = true;
-            this.label163.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label163.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label163.Location = new System.Drawing.Point(229, 0);
-            this.label163.MinimumSize = new System.Drawing.Size(150, 0);
-            this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(150, 15);
-            this.label163.TabIndex = 1;
-            this.label163.Text = "ЗСОА10031(;412аас)14";
-            this.label163.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label164
-            // 
-            this.label164.AutoSize = true;
-            this.label164.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label164.Location = new System.Drawing.Point(385, 0);
-            this.label164.MinimumSize = new System.Drawing.Size(250, 0);
-            this.label164.Name = "label164";
-            this.label164.Size = new System.Drawing.Size(250, 13);
-            this.label164.TabIndex = 2;
-            this.label164.Text = "Максимальная пропускная способность";
-            this.label164.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label165
-            // 
-            this.label165.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label165.AutoSize = true;
-            this.label165.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label165.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label165.Location = new System.Drawing.Point(641, 0);
-            this.label165.MinimumSize = new System.Drawing.Size(100, 0);
-            this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(100, 15);
-            this.label165.TabIndex = 3;
-            this.label165.Text = "Ыштпду";
-            this.label165.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel82
             // 
@@ -4777,6 +4753,16 @@
             this.label215.Text = "Ыштпду";
             this.label215.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tabPageGraphics
+            // 
+            this.tabPageGraphics.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageGraphics.Controls.Add(this.flowLayoutPanel89);
+            this.tabPageGraphics.Location = new System.Drawing.Point(4, 22);
+            this.tabPageGraphics.Name = "tabPageGraphics";
+            this.tabPageGraphics.Size = new System.Drawing.Size(790, 393);
+            this.tabPageGraphics.TabIndex = 5;
+            this.tabPageGraphics.Text = "Графика";
+            // 
             // flowLayoutPanel89
             // 
             this.flowLayoutPanel89.BackColor = System.Drawing.Color.Transparent;
@@ -4810,6 +4796,28 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(290, 21);
             this.comboBox3.TabIndex = 4;
+            // 
+            // label216
+            // 
+            this.label216.AutoSize = true;
+            this.label216.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label216.Location = new System.Drawing.Point(301, 21);
+            this.label216.MinimumSize = new System.Drawing.Size(220, 0);
+            this.label216.Name = "label216";
+            this.label216.Size = new System.Drawing.Size(220, 13);
+            this.label216.TabIndex = 5;
+            this.label216.Text = "Уровень производительности";
+            this.label216.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            " Slot #n"});
+            this.comboBox5.Location = new System.Drawing.Point(527, 18);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(219, 21);
+            this.comboBox5.TabIndex = 6;
             // 
             // groupBox14
             // 
@@ -4871,28 +4879,6 @@
             this.label239.TabIndex = 1;
             this.label239.Text = "ЗСОА10031(;412аас)14";
             this.label239.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label216
-            // 
-            this.label216.AutoSize = true;
-            this.label216.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label216.Location = new System.Drawing.Point(301, 21);
-            this.label216.MinimumSize = new System.Drawing.Size(220, 0);
-            this.label216.Name = "label216";
-            this.label216.Size = new System.Drawing.Size(220, 13);
-            this.label216.TabIndex = 5;
-            this.label216.Text = "Уровень производительности";
-            this.label216.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            " Slot #n"});
-            this.comboBox5.Location = new System.Drawing.Point(527, 18);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(219, 21);
-            this.comboBox5.TabIndex = 6;
             // 
             // flowLayoutPanel90
             // 
@@ -5294,6 +5280,16 @@
             this.label236.Text = "ЗСОА10031(;412аас)14";
             this.label236.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tabPageBench
+            // 
+            this.tabPageBench.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPageBench.Controls.Add(this.flowLayoutPanel103);
+            this.tabPageBench.Location = new System.Drawing.Point(4, 22);
+            this.tabPageBench.Name = "tabPageBench";
+            this.tabPageBench.Size = new System.Drawing.Size(790, 393);
+            this.tabPageBench.TabIndex = 6;
+            this.tabPageBench.Text = "Тест";
+            // 
             // flowLayoutPanel103
             // 
             this.flowLayoutPanel103.BackColor = System.Drawing.Color.Transparent;
@@ -5305,6 +5301,176 @@
             this.flowLayoutPanel103.Name = "flowLayoutPanel103";
             this.flowLayoutPanel103.Size = new System.Drawing.Size(790, 405);
             this.flowLayoutPanel103.TabIndex = 9;
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.label242);
+            this.groupBox18.Controls.Add(this.label241);
+            this.groupBox18.Controls.Add(this.colorProgressBar2);
+            this.groupBox18.Controls.Add(this.colorProgressBar1);
+            this.groupBox18.Controls.Add(this.checkBox2);
+            this.groupBox18.Controls.Add(this.label240);
+            this.groupBox18.Location = new System.Drawing.Point(3, 3);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(778, 70);
+            this.groupBox18.TabIndex = 9;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Процессор";
+            // 
+            // label241
+            // 
+            this.label241.AutoSize = true;
+            this.label241.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label241.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label241.Location = new System.Drawing.Point(665, 15);
+            this.label241.Name = "label241";
+            this.label241.Size = new System.Drawing.Size(40, 16);
+            this.label241.TabIndex = 15;
+            this.label241.Text = "1337";
+            this.label241.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // colorProgressBar2
+            // 
+            this.colorProgressBar2.BarColor = System.Drawing.Color.Violet;
+            this.colorProgressBar2.BorderColor = System.Drawing.Color.White;
+            this.colorProgressBar2.FillStyle = ColorProgressBar.ColorProgressBar.FillStyles.Solid;
+            this.colorProgressBar2.Location = new System.Drawing.Point(128, 37);
+            this.colorProgressBar2.Maximum = 100;
+            this.colorProgressBar2.Minimum = 0;
+            this.colorProgressBar2.Name = "colorProgressBar2";
+            this.colorProgressBar2.Size = new System.Drawing.Size(531, 20);
+            this.colorProgressBar2.Step = 10;
+            this.colorProgressBar2.TabIndex = 12;
+            this.colorProgressBar2.Value = 15;
+            // 
+            // colorProgressBar1
+            // 
+            this.colorProgressBar1.BarColor = System.Drawing.Color.Aqua;
+            this.colorProgressBar1.BorderColor = System.Drawing.Color.White;
+            this.colorProgressBar1.FillStyle = ColorProgressBar.ColorProgressBar.FillStyles.Solid;
+            this.colorProgressBar1.Location = new System.Drawing.Point(128, 15);
+            this.colorProgressBar1.Maximum = 100;
+            this.colorProgressBar1.Minimum = 0;
+            this.colorProgressBar1.Name = "colorProgressBar1";
+            this.colorProgressBar1.Size = new System.Drawing.Size(531, 20);
+            this.colorProgressBar1.Step = 10;
+            this.colorProgressBar1.TabIndex = 11;
+            this.colorProgressBar1.Value = 15;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(22, 40);
+            this.checkBox2.MinimumSize = new System.Drawing.Size(100, 0);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(100, 17);
+            this.checkBox2.TabIndex = 4;
+            this.checkBox2.Text = " Связанный";
+            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // label240
+            // 
+            this.label240.AutoSize = true;
+            this.label240.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label240.Location = new System.Drawing.Point(19, 15);
+            this.label240.MinimumSize = new System.Drawing.Size(100, 18);
+            this.label240.Name = "label240";
+            this.label240.Size = new System.Drawing.Size(100, 18);
+            this.label240.TabIndex = 0;
+            this.label240.Text = "Этот ЦП";
+            this.label240.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.label243);
+            this.groupBox20.Controls.Add(this.colorProgressBar3);
+            this.groupBox20.Controls.Add(this.label244);
+            this.groupBox20.Controls.Add(this.comboBox7);
+            this.groupBox20.Controls.Add(this.colorProgressBar4);
+            this.groupBox20.Controls.Add(this.checkBox3);
+            this.groupBox20.Controls.Add(this.checkBox1);
+            this.groupBox20.Controls.Add(this.label256);
+            this.groupBox20.Location = new System.Drawing.Point(3, 79);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(778, 94);
+            this.groupBox20.TabIndex = 8;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Процессор";
+            // 
+            // colorProgressBar3
+            // 
+            this.colorProgressBar3.BarColor = System.Drawing.Color.Violet;
+            this.colorProgressBar3.BorderColor = System.Drawing.Color.White;
+            this.colorProgressBar3.FillStyle = ColorProgressBar.ColorProgressBar.FillStyles.Solid;
+            this.colorProgressBar3.Location = new System.Drawing.Point(128, 35);
+            this.colorProgressBar3.Maximum = 100;
+            this.colorProgressBar3.Minimum = 0;
+            this.colorProgressBar3.Name = "colorProgressBar3";
+            this.colorProgressBar3.Size = new System.Drawing.Size(531, 20);
+            this.colorProgressBar3.Step = 10;
+            this.colorProgressBar3.TabIndex = 14;
+            this.colorProgressBar3.Value = 15;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            " Slot #n"});
+            this.comboBox7.Location = new System.Drawing.Point(212, 61);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(92, 21);
+            this.comboBox7.TabIndex = 7;
+            // 
+            // colorProgressBar4
+            // 
+            this.colorProgressBar4.BarColor = System.Drawing.Color.Aqua;
+            this.colorProgressBar4.BorderColor = System.Drawing.Color.White;
+            this.colorProgressBar4.FillStyle = ColorProgressBar.ColorProgressBar.FillStyles.Solid;
+            this.colorProgressBar4.Location = new System.Drawing.Point(128, 13);
+            this.colorProgressBar4.Maximum = 100;
+            this.colorProgressBar4.Minimum = 0;
+            this.colorProgressBar4.Name = "colorProgressBar4";
+            this.colorProgressBar4.Size = new System.Drawing.Size(531, 20);
+            this.colorProgressBar4.Step = 10;
+            this.colorProgressBar4.TabIndex = 13;
+            this.colorProgressBar4.Value = 15;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(22, 63);
+            this.checkBox3.MinimumSize = new System.Drawing.Size(100, 0);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(184, 17);
+            this.checkBox3.TabIndex = 5;
+            this.checkBox3.Text = "число логических процессоров";
+            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(22, 40);
+            this.checkBox1.MinimumSize = new System.Drawing.Size(100, 0);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(100, 17);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = " Связанный";
+            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label256
+            // 
+            this.label256.AutoSize = true;
+            this.label256.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label256.Location = new System.Drawing.Point(19, 15);
+            this.label256.MinimumSize = new System.Drawing.Size(100, 18);
+            this.label256.Name = "label256";
+            this.label256.Size = new System.Drawing.Size(100, 18);
+            this.label256.TabIndex = 0;
+            this.label256.Text = "Этот ЦП";
+            this.label256.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // groupBox17
             // 
@@ -5339,140 +5505,6 @@
             this.comboBox6.Size = new System.Drawing.Size(384, 21);
             this.comboBox6.TabIndex = 6;
             // 
-            // groupBox20
-            // 
-            this.groupBox20.Controls.Add(this.comboBox7);
-            this.groupBox20.Controls.Add(this.checkBox3);
-            this.groupBox20.Controls.Add(this.checkBox1);
-            this.groupBox20.Controls.Add(this.progressBar2);
-            this.groupBox20.Controls.Add(this.label256);
-            this.groupBox20.Controls.Add(this.progressBar1);
-            this.groupBox20.Location = new System.Drawing.Point(3, 79);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(778, 94);
-            this.groupBox20.TabIndex = 8;
-            this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Процессор";
-            // 
-            // label256
-            // 
-            this.label256.AutoSize = true;
-            this.label256.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label256.Location = new System.Drawing.Point(19, 15);
-            this.label256.MinimumSize = new System.Drawing.Size(100, 18);
-            this.label256.Name = "label256";
-            this.label256.Size = new System.Drawing.Size(100, 18);
-            this.label256.TabIndex = 0;
-            this.label256.Text = "Этот ЦП";
-            this.label256.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(128, 15);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.progressBar1.Size = new System.Drawing.Size(618, 18);
-            this.progressBar1.TabIndex = 1;
-            this.progressBar1.Value = 42;
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(128, 39);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.progressBar2.Size = new System.Drawing.Size(618, 18);
-            this.progressBar2.TabIndex = 3;
-            this.progressBar2.Value = 42;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(22, 40);
-            this.checkBox1.MinimumSize = new System.Drawing.Size(100, 0);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(100, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = " Связанный";
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // groupBox18
-            // 
-            this.groupBox18.Controls.Add(this.checkBox2);
-            this.groupBox18.Controls.Add(this.progressBar3);
-            this.groupBox18.Controls.Add(this.label240);
-            this.groupBox18.Controls.Add(this.progressBar4);
-            this.groupBox18.Location = new System.Drawing.Point(3, 3);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(778, 70);
-            this.groupBox18.TabIndex = 9;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Процессор";
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(22, 40);
-            this.checkBox2.MinimumSize = new System.Drawing.Size(100, 0);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(100, 17);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = " Связанный";
-            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // progressBar3
-            // 
-            this.progressBar3.Location = new System.Drawing.Point(128, 39);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.progressBar3.Size = new System.Drawing.Size(618, 18);
-            this.progressBar3.TabIndex = 3;
-            this.progressBar3.Value = 42;
-            // 
-            // label240
-            // 
-            this.label240.AutoSize = true;
-            this.label240.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label240.Location = new System.Drawing.Point(19, 15);
-            this.label240.MinimumSize = new System.Drawing.Size(100, 18);
-            this.label240.Name = "label240";
-            this.label240.Size = new System.Drawing.Size(100, 18);
-            this.label240.TabIndex = 0;
-            this.label240.Text = "Этот ЦП";
-            this.label240.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // progressBar4
-            // 
-            this.progressBar4.Location = new System.Drawing.Point(128, 15);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.progressBar4.Size = new System.Drawing.Size(618, 18);
-            this.progressBar4.TabIndex = 1;
-            this.progressBar4.Value = 42;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(22, 63);
-            this.checkBox3.MinimumSize = new System.Drawing.Size(100, 0);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(184, 17);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "число логических процессоров";
-            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            " Slot #n"});
-            this.comboBox7.Location = new System.Drawing.Point(212, 61);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(92, 21);
-            this.comboBox7.TabIndex = 7;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(20, 301);
@@ -5482,6 +5514,52 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Тест ЦП";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonClose.Location = new System.Drawing.Point(675, 421);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(119, 23);
+            this.buttonClose.TabIndex = 1;
+            this.buttonClose.Text = "Закрыть";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            // 
+            // label242
+            // 
+            this.label242.AutoSize = true;
+            this.label242.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label242.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label242.Location = new System.Drawing.Point(665, 37);
+            this.label242.Name = "label242";
+            this.label242.Size = new System.Drawing.Size(40, 16);
+            this.label242.TabIndex = 16;
+            this.label242.Text = "1337";
+            this.label242.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label243
+            // 
+            this.label243.AutoSize = true;
+            this.label243.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label243.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label243.Location = new System.Drawing.Point(665, 35);
+            this.label243.Name = "label243";
+            this.label243.Size = new System.Drawing.Size(40, 16);
+            this.label243.TabIndex = 18;
+            this.label243.Text = "1337";
+            this.label243.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label244
+            // 
+            this.label244.AutoSize = true;
+            this.label244.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label244.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label244.Location = new System.Drawing.Point(665, 13);
+            this.label244.Name = "label244";
+            this.label244.Size = new System.Drawing.Size(40, 16);
+            this.label244.TabIndex = 17;
+            this.label244.Text = "1337";
+            this.label244.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
@@ -5498,26 +5576,6 @@
             this.Text = "The Big Hardware Monitor";
             this.mainTabControl.ResumeLayout(false);
             this.tabPageCpu.ResumeLayout(false);
-            this.groupBoxChache.ResumeLayout(false);
-            this.flowLayoutPanel19.ResumeLayout(false);
-            this.flowLayoutPanel20.ResumeLayout(false);
-            this.flowLayoutPanel20.PerformLayout();
-            this.flowLayoutPanel21.ResumeLayout(false);
-            this.flowLayoutPanel21.PerformLayout();
-            this.flowLayoutPanel22.ResumeLayout(false);
-            this.flowLayoutPanel22.PerformLayout();
-            this.flowLayoutPanel23.ResumeLayout(false);
-            this.flowLayoutPanel23.PerformLayout();
-            this.groupBoxClocks.ResumeLayout(false);
-            this.flowLayoutPanel14.ResumeLayout(false);
-            this.flowLayoutPanel16.ResumeLayout(false);
-            this.flowLayoutPanel16.PerformLayout();
-            this.flowLayoutPanel15.ResumeLayout(false);
-            this.flowLayoutPanel15.PerformLayout();
-            this.flowLayoutPanel17.ResumeLayout(false);
-            this.flowLayoutPanel17.PerformLayout();
-            this.flowLayoutPanel18.ResumeLayout(false);
-            this.flowLayoutPanel18.PerformLayout();
             this.groupBoxProcessor.ResumeLayout(false);
             this.layoutBox.ResumeLayout(false);
             this.layoutNameAndValue.ResumeLayout(false);
@@ -5548,6 +5606,26 @@
             this.flowLayoutPanel12.PerformLayout();
             this.flowLayoutPanel13.ResumeLayout(false);
             this.flowLayoutPanel13.PerformLayout();
+            this.groupBoxChache.ResumeLayout(false);
+            this.flowLayoutPanel19.ResumeLayout(false);
+            this.flowLayoutPanel20.ResumeLayout(false);
+            this.flowLayoutPanel20.PerformLayout();
+            this.flowLayoutPanel21.ResumeLayout(false);
+            this.flowLayoutPanel21.PerformLayout();
+            this.flowLayoutPanel22.ResumeLayout(false);
+            this.flowLayoutPanel22.PerformLayout();
+            this.flowLayoutPanel23.ResumeLayout(false);
+            this.flowLayoutPanel23.PerformLayout();
+            this.groupBoxClocks.ResumeLayout(false);
+            this.flowLayoutPanel14.ResumeLayout(false);
+            this.flowLayoutPanel16.ResumeLayout(false);
+            this.flowLayoutPanel16.PerformLayout();
+            this.flowLayoutPanel15.ResumeLayout(false);
+            this.flowLayoutPanel15.PerformLayout();
+            this.flowLayoutPanel17.ResumeLayout(false);
+            this.flowLayoutPanel17.PerformLayout();
+            this.flowLayoutPanel18.ResumeLayout(false);
+            this.flowLayoutPanel18.PerformLayout();
             this.groupBoxSelectProc.ResumeLayout(false);
             this.flowLayoutPanel24.ResumeLayout(false);
             this.flowLayoutPanel35.ResumeLayout(false);
@@ -5557,17 +5635,12 @@
             this.flowLayoutPanel37.ResumeLayout(false);
             this.flowLayoutPanel37.PerformLayout();
             this.tabPageCaches.ResumeLayout(false);
-            this.tabPageMainboard.ResumeLayout(false);
-            this.tabPageMemory.ResumeLayout(false);
-            this.tabPageSpd.ResumeLayout(false);
-            this.tabPageGraphics.ResumeLayout(false);
-            this.tabPageBench.ResumeLayout(false);
+            this.flowLayoutPanel25.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            this.flowLayoutPanel26.ResumeLayout(false);
-            this.flowLayoutPanel26.PerformLayout();
             this.flowLayoutPanel27.ResumeLayout(false);
             this.flowLayoutPanel27.PerformLayout();
-            this.flowLayoutPanel25.ResumeLayout(false);
+            this.flowLayoutPanel26.ResumeLayout(false);
+            this.flowLayoutPanel26.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.flowLayoutPanel28.ResumeLayout(false);
             this.flowLayoutPanel28.PerformLayout();
@@ -5584,21 +5657,14 @@
             this.flowLayoutPanel33.ResumeLayout(false);
             this.flowLayoutPanel33.PerformLayout();
             this.groupBox5.ResumeLayout(false);
+            this.flowLayoutPanel39.ResumeLayout(false);
+            this.flowLayoutPanel39.PerformLayout();
             this.flowLayoutPanel34.ResumeLayout(false);
             this.flowLayoutPanel34.PerformLayout();
             this.flowLayoutPanel38.ResumeLayout(false);
             this.flowLayoutPanel38.PerformLayout();
-            this.flowLayoutPanel39.ResumeLayout(false);
-            this.flowLayoutPanel39.PerformLayout();
+            this.tabPageMainboard.ResumeLayout(false);
             this.flowLayoutPanel40.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.flowLayoutPanel41.ResumeLayout(false);
-            this.flowLayoutPanel41.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.flowLayoutPanel43.ResumeLayout(false);
-            this.flowLayoutPanel43.PerformLayout();
-            this.flowLayoutPanel44.ResumeLayout(false);
-            this.flowLayoutPanel44.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.flowLayoutPanel45.ResumeLayout(false);
             this.flowLayoutPanel46.ResumeLayout(false);
@@ -5611,12 +5677,21 @@
             this.flowLayoutPanel48.PerformLayout();
             this.flowLayoutPanel50.ResumeLayout(false);
             this.flowLayoutPanel50.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
             this.flowLayoutPanel42.ResumeLayout(false);
             this.flowLayoutPanel42.PerformLayout();
+            this.flowLayoutPanel41.ResumeLayout(false);
+            this.flowLayoutPanel41.PerformLayout();
             this.flowLayoutPanel51.ResumeLayout(false);
             this.flowLayoutPanel51.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
             this.flowLayoutPanel52.ResumeLayout(false);
             this.flowLayoutPanel52.PerformLayout();
+            this.flowLayoutPanel44.ResumeLayout(false);
+            this.flowLayoutPanel44.PerformLayout();
+            this.flowLayoutPanel43.ResumeLayout(false);
+            this.flowLayoutPanel43.PerformLayout();
+            this.tabPageMemory.ResumeLayout(false);
             this.flowLayoutPanel53.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.flowLayoutPanel54.ResumeLayout(false);
@@ -5630,6 +5705,8 @@
             this.flowLayoutPanel58.ResumeLayout(false);
             this.flowLayoutPanel61.ResumeLayout(false);
             this.flowLayoutPanel61.PerformLayout();
+            this.flowLayoutPanel69.ResumeLayout(false);
+            this.flowLayoutPanel69.PerformLayout();
             this.flowLayoutPanel59.ResumeLayout(false);
             this.flowLayoutPanel59.PerformLayout();
             this.flowLayoutPanel60.ResumeLayout(false);
@@ -5648,32 +5725,31 @@
             this.flowLayoutPanel67.PerformLayout();
             this.flowLayoutPanel68.ResumeLayout(false);
             this.flowLayoutPanel68.PerformLayout();
-            this.flowLayoutPanel69.ResumeLayout(false);
-            this.flowLayoutPanel69.PerformLayout();
             this.flowLayoutPanel70.ResumeLayout(false);
             this.flowLayoutPanel70.PerformLayout();
+            this.tabPageSpd.ResumeLayout(false);
             this.flowLayoutPanel71.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.flowLayoutPanel76.ResumeLayout(false);
+            this.flowLayoutPanel72.ResumeLayout(false);
             this.flowLayoutPanel73.ResumeLayout(false);
             this.flowLayoutPanel73.PerformLayout();
-            this.flowLayoutPanel72.ResumeLayout(false);
             this.flowLayoutPanel74.ResumeLayout(false);
             this.flowLayoutPanel74.PerformLayout();
             this.flowLayoutPanel75.ResumeLayout(false);
             this.flowLayoutPanel75.PerformLayout();
             this.flowLayoutPanel77.ResumeLayout(false);
             this.flowLayoutPanel77.PerformLayout();
-            this.flowLayoutPanel80.ResumeLayout(false);
-            this.flowLayoutPanel80.PerformLayout();
-            this.flowLayoutPanel79.ResumeLayout(false);
-            this.flowLayoutPanel79.PerformLayout();
-            this.flowLayoutPanel81.ResumeLayout(false);
-            this.flowLayoutPanel81.PerformLayout();
             this.flowLayoutPanel78.ResumeLayout(false);
             this.flowLayoutPanel78.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.flowLayoutPanel76.ResumeLayout(false);
+            this.flowLayoutPanel79.ResumeLayout(false);
+            this.flowLayoutPanel79.PerformLayout();
+            this.flowLayoutPanel80.ResumeLayout(false);
+            this.flowLayoutPanel80.PerformLayout();
+            this.flowLayoutPanel81.ResumeLayout(false);
+            this.flowLayoutPanel81.PerformLayout();
             this.flowLayoutPanel82.ResumeLayout(false);
             this.flowLayoutPanel82.PerformLayout();
             this.flowLayoutPanel83.ResumeLayout(false);
@@ -5688,6 +5764,7 @@
             this.flowLayoutPanel87.PerformLayout();
             this.flowLayoutPanel88.ResumeLayout(false);
             this.flowLayoutPanel88.PerformLayout();
+            this.tabPageGraphics.ResumeLayout(false);
             this.flowLayoutPanel89.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
@@ -5717,13 +5794,14 @@
             this.flowLayoutPanel101.PerformLayout();
             this.flowLayoutPanel102.ResumeLayout(false);
             this.flowLayoutPanel102.PerformLayout();
+            this.tabPageBench.ResumeLayout(false);
             this.flowLayoutPanel103.ResumeLayout(false);
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox17.PerformLayout();
-            this.groupBox20.ResumeLayout(false);
-            this.groupBox20.PerformLayout();
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -6113,17 +6191,21 @@
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.GroupBox groupBox20;
         private System.Windows.Forms.Label label256;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.Label label240;
-        private System.Windows.Forms.ProgressBar progressBar4;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label241;
+        private ColorProgressBar.ColorProgressBar colorProgressBar2;
+        private ColorProgressBar.ColorProgressBar colorProgressBar1;
+        private ColorProgressBar.ColorProgressBar colorProgressBar3;
+        private ColorProgressBar.ColorProgressBar colorProgressBar4;
+        private System.Windows.Forms.Label label242;
+        private System.Windows.Forms.Label label243;
+        private System.Windows.Forms.Label label244;
     }
 }
 
