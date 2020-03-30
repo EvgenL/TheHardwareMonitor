@@ -356,12 +356,6 @@ namespace TheHardwareMonitor
             this.label208 = new System.Windows.Forms.Label();
             this.label209 = new System.Windows.Forms.Label();
             this.label210 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel88 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label211 = new System.Windows.Forms.Label();
-            this.label212 = new System.Windows.Forms.Label();
-            this.label213 = new System.Windows.Forms.Label();
-            this.label214 = new System.Windows.Forms.Label();
-            this.label215 = new System.Windows.Forms.Label();
             this.tabPageGraphics = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel89 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
@@ -540,7 +534,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel85.SuspendLayout();
             this.flowLayoutPanel86.SuspendLayout();
             this.flowLayoutPanel87.SuspendLayout();
-            this.flowLayoutPanel88.SuspendLayout();
             this.tabPageGraphics.SuspendLayout();
             this.flowLayoutPanel89.SuspendLayout();
             this.groupBox13.SuspendLayout();
@@ -650,7 +643,7 @@ namespace TheHardwareMonitor
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(170, 13);
             this.labelName.TabIndex = 0;
-            this.labelName.Text = "Корпусировка процессора";
+            this.labelName.Text = "Модель процессора";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelValue
@@ -686,7 +679,7 @@ namespace TheHardwareMonitor
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Корпусировка процессора";
+            this.label1.Text = "Кодовое имя процессора";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
@@ -794,7 +787,7 @@ namespace TheHardwareMonitor
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(170, 13);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Корпусировка процессора";
+            this.label7.Text = "Технологический процесс";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label8
@@ -828,9 +821,9 @@ namespace TheHardwareMonitor
             this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.MinimumSize = new System.Drawing.Size(170, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(197, 13);
+            this.label9.Size = new System.Drawing.Size(170, 13);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Номинальное значение отвода тепла";
+            this.label9.Text = "Напряжение ядра";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label10
@@ -839,7 +832,7 @@ namespace TheHardwareMonitor
             this.label10.AutoSize = true;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label10.Location = new System.Drawing.Point(206, 0);
+            this.label10.Location = new System.Drawing.Point(179, 0);
             this.label10.MinimumSize = new System.Drawing.Size(5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(51, 15);
@@ -866,7 +859,7 @@ namespace TheHardwareMonitor
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(170, 13);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Корпусировка процессора";
+            this.label11.Text = "Спецификация";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label12
@@ -938,7 +931,7 @@ namespace TheHardwareMonitor
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(170, 13);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Семейство";
+            this.label15.Text = "Модель";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label16
@@ -1010,7 +1003,7 @@ namespace TheHardwareMonitor
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(170, 13);
             this.label19.TabIndex = 0;
-            this.label19.Text = "Семейство";
+            this.label19.Text = "Расширение семейства";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label20
@@ -1046,7 +1039,7 @@ namespace TheHardwareMonitor
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(170, 13);
             this.label21.TabIndex = 0;
-            this.label21.Text = "Семейство";
+            this.label21.Text = "Расширение модели";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label22
@@ -1082,7 +1075,7 @@ namespace TheHardwareMonitor
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(170, 13);
             this.label23.TabIndex = 0;
-            this.label23.Text = "Семейство";
+            this.label23.Text = "Ревизия ядре процессора";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label24
@@ -1118,7 +1111,7 @@ namespace TheHardwareMonitor
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(170, 13);
             this.label25.TabIndex = 0;
-            this.label25.Text = "Корпусировка процессора";
+            this.label25.Text = "Набор инструкций";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label26
@@ -1139,10 +1132,11 @@ namespace TheHardwareMonitor
             this.groupBoxChache.Controls.Add(this.flowLayoutPanel19);
             this.groupBoxChache.Location = new System.Drawing.Point(276, 219);
             this.groupBoxChache.Name = "groupBoxChache";
+            this.groupBoxChache.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.groupBoxChache.Size = new System.Drawing.Size(507, 109);
             this.groupBoxChache.TabIndex = 2;
             this.groupBoxChache.TabStop = false;
-            this.groupBoxChache.Text = "Процессор";
+            this.groupBoxChache.Text = "Сведения о кэш-памяти процессора";
             // 
             // flowLayoutPanel19
             // 
@@ -1227,7 +1221,7 @@ namespace TheHardwareMonitor
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(240, 13);
             this.label37.TabIndex = 0;
-            this.label37.Text = "Множитель процессора";
+            this.label37.Text = "Сведения о кэш-памяти 1 уровня";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label38
@@ -1278,7 +1272,7 @@ namespace TheHardwareMonitor
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(240, 13);
             this.label39.TabIndex = 0;
-            this.label39.Text = "Множитель процессора";
+            this.label39.Text = "Сведения о кэш-памяти 2 уровня";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label40
@@ -1329,7 +1323,7 @@ namespace TheHardwareMonitor
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(240, 13);
             this.label41.TabIndex = 0;
-            this.label41.Text = "Множитель процессора";
+            this.label41.Text = "Сведения о кэш-памяти 3 уровня";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label42
@@ -1368,7 +1362,7 @@ namespace TheHardwareMonitor
             this.groupBoxClocks.Size = new System.Drawing.Size(273, 109);
             this.groupBoxClocks.TabIndex = 1;
             this.groupBoxClocks.TabStop = false;
-            this.groupBoxClocks.Text = "Процессор";
+            this.groupBoxClocks.Text = "Частота (ядро #0)";
             // 
             // flowLayoutPanel14
             // 
@@ -1401,7 +1395,7 @@ namespace TheHardwareMonitor
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(140, 13);
             this.label29.TabIndex = 0;
-            this.label29.Text = "Множитель процессора";
+            this.label29.Text = "Тактовая частота";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label30
@@ -1473,7 +1467,7 @@ namespace TheHardwareMonitor
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(140, 13);
             this.label31.TabIndex = 0;
-            this.label31.Text = "Множитель процессора";
+            this.label31.Text = "Внешняя частота";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label32
@@ -1509,7 +1503,7 @@ namespace TheHardwareMonitor
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(140, 13);
             this.label33.TabIndex = 0;
-            this.label33.Text = "Множитель процессора";
+            this.label33.Text = "Эффективная частота";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label34
@@ -1681,7 +1675,7 @@ namespace TheHardwareMonitor
             this.groupBox1.Size = new System.Drawing.Size(781, 65);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Процессор";
+            this.groupBox1.Text = "Кэш-память первого уровня для данных";
             // 
             // flowLayoutPanel27
             // 
@@ -1702,7 +1696,7 @@ namespace TheHardwareMonitor
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(200, 13);
             this.label50.TabIndex = 0;
-            this.label50.Text = "Объем кэш-памяти";
+            this.label50.Text = "Сведения о кэше";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label51
@@ -1779,7 +1773,7 @@ namespace TheHardwareMonitor
             this.groupBox2.Size = new System.Drawing.Size(781, 65);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Процессор";
+            this.groupBox2.Text = "Кэш-память первого уровня для инструкций";
             // 
             // flowLayoutPanel28
             // 
@@ -1800,7 +1794,7 @@ namespace TheHardwareMonitor
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(200, 13);
             this.label53.TabIndex = 0;
-            this.label53.Text = "Объем кэш-памяти";
+            this.label53.Text = "Сведения о кэше";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label54
@@ -1877,7 +1871,7 @@ namespace TheHardwareMonitor
             this.groupBox3.Size = new System.Drawing.Size(781, 65);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Процессор";
+            this.groupBox3.Text = "Кэш второго уровня";
             // 
             // flowLayoutPanel30
             // 
@@ -1898,7 +1892,7 @@ namespace TheHardwareMonitor
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(200, 13);
             this.label58.TabIndex = 0;
-            this.label58.Text = "Объем кэш-памяти";
+            this.label58.Text = "Сведения о кэше";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label59
@@ -1975,7 +1969,7 @@ namespace TheHardwareMonitor
             this.groupBox4.Size = new System.Drawing.Size(781, 65);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Процессор";
+            this.groupBox4.Text = "Кэш третьего уровня";
             // 
             // flowLayoutPanel32
             // 
@@ -1996,7 +1990,7 @@ namespace TheHardwareMonitor
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(200, 13);
             this.label63.TabIndex = 0;
-            this.label63.Text = "Объем кэш-памяти";
+            this.label63.Text = "Сведения о кэше";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label64
@@ -2074,7 +2068,6 @@ namespace TheHardwareMonitor
             this.groupBox5.Size = new System.Drawing.Size(781, 83);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Процессор";
             // 
             // flowLayoutPanel39
             // 
@@ -2095,7 +2088,7 @@ namespace TheHardwareMonitor
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(200, 13);
             this.label78.TabIndex = 0;
-            this.label78.Text = "Объем кэш-памяти";
+            this.label78.Text = "Скорость";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label79
@@ -2131,7 +2124,7 @@ namespace TheHardwareMonitor
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(200, 13);
             this.label73.TabIndex = 0;
-            this.label73.Text = "Объем кэш-памяти";
+            this.label73.Text = "Сведения о кэше";
             this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label74
@@ -2228,7 +2221,7 @@ namespace TheHardwareMonitor
             this.groupBox8.Size = new System.Drawing.Size(778, 138);
             this.groupBox8.TabIndex = 5;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Процессор";
+            this.groupBox8.Text = "Системная плата";
             // 
             // flowLayoutPanel45
             // 
@@ -2302,7 +2295,7 @@ namespace TheHardwareMonitor
             this.label91.Name = "label91";
             this.label91.Size = new System.Drawing.Size(200, 13);
             this.label91.TabIndex = 0;
-            this.label91.Text = "Корпусировка процессора";
+            this.label91.Text = "Модель материнской платы";
             this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label92
@@ -2355,7 +2348,7 @@ namespace TheHardwareMonitor
             this.label95.Name = "label95";
             this.label95.Size = new System.Drawing.Size(200, 13);
             this.label95.TabIndex = 0;
-            this.label95.Text = "Корпусировка процессора";
+            this.label95.Text = "Набор микросхем";
             this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label96
@@ -2434,7 +2427,7 @@ namespace TheHardwareMonitor
             this.label97.Name = "label97";
             this.label97.Size = new System.Drawing.Size(200, 13);
             this.label97.TabIndex = 0;
-            this.label97.Text = "Корпусировка процессора";
+            this.label97.Text = "Южный мост";
             this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label98
@@ -2511,7 +2504,7 @@ namespace TheHardwareMonitor
             this.label102.Name = "label102";
             this.label102.Size = new System.Drawing.Size(200, 13);
             this.label102.TabIndex = 0;
-            this.label102.Text = "Корпусировка процессора";
+            this.label102.Text = "Чип мультипривода-вывода";
             this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label103
@@ -2552,7 +2545,7 @@ namespace TheHardwareMonitor
             this.groupBox6.Size = new System.Drawing.Size(781, 92);
             this.groupBox6.TabIndex = 3;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Процессор";
+            this.groupBox6.Text = "BIOS";
             // 
             // flowLayoutPanel42
             // 
@@ -2573,8 +2566,8 @@ namespace TheHardwareMonitor
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(200, 13);
             this.label81.TabIndex = 0;
-            this.label81.Text = "Объем кэш-памяти";
-            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label81.Text = "Название производителя BIOS";
+            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label82
             // 
@@ -2609,8 +2602,8 @@ namespace TheHardwareMonitor
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(200, 13);
             this.label52.TabIndex = 0;
-            this.label52.Text = "Объем кэш-памяти";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label52.Text = "Версия BIOS";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label80
             // 
@@ -2645,8 +2638,8 @@ namespace TheHardwareMonitor
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(200, 13);
             this.label83.TabIndex = 0;
-            this.label83.Text = "Объем кэш-памяти";
-            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label83.Text = "Дата выпуска версии BIOS";
+            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label105
             // 
@@ -2672,7 +2665,7 @@ namespace TheHardwareMonitor
             this.groupBox7.Size = new System.Drawing.Size(781, 87);
             this.groupBox7.TabIndex = 4;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Процессор";
+            this.groupBox7.Text = "Графическая шина";
             // 
             // flowLayoutPanel52
             // 
@@ -2693,8 +2686,8 @@ namespace TheHardwareMonitor
             this.label107.Name = "label107";
             this.label107.Size = new System.Drawing.Size(200, 13);
             this.label107.TabIndex = 0;
-            this.label107.Text = "Объем кэш-памяти";
-            this.label107.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label107.Text = "Опция шины AGP";
+            this.label107.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label108
             // 
@@ -2731,8 +2724,8 @@ namespace TheHardwareMonitor
             this.label86.Name = "label86";
             this.label86.Size = new System.Drawing.Size(200, 13);
             this.label86.TabIndex = 0;
-            this.label86.Text = "Объем кэш-памяти";
-            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label86.Text = "Текущий режим шины";
+            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label87
             // 
@@ -2793,8 +2786,8 @@ namespace TheHardwareMonitor
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(200, 13);
             this.label84.TabIndex = 0;
-            this.label84.Text = "Объем кэш-памяти";
-            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label84.Text = "Название версии порта";
+            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label85
             // 
@@ -2838,7 +2831,7 @@ namespace TheHardwareMonitor
             this.groupBox9.Size = new System.Drawing.Size(778, 90);
             this.groupBox9.TabIndex = 5;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Процессор";
+            this.groupBox9.Text = "Общие";
             // 
             // flowLayoutPanel54
             // 
@@ -2939,7 +2932,7 @@ namespace TheHardwareMonitor
             this.label111.Name = "label111";
             this.label111.Size = new System.Drawing.Size(150, 13);
             this.label111.TabIndex = 0;
-            this.label111.Text = "Тип оперативной памяти";
+            this.label111.Text = "Объём памяти";
             this.label111.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label112
@@ -2965,7 +2958,7 @@ namespace TheHardwareMonitor
             this.label113.Name = "label113";
             this.label113.Size = new System.Drawing.Size(380, 13);
             this.label113.TabIndex = 2;
-            this.label113.Text = "Число каналов";
+            this.label113.Text = "Режим двухканального доступа";
             this.label113.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label114
@@ -3001,7 +2994,7 @@ namespace TheHardwareMonitor
             this.label119.Name = "label119";
             this.label119.Size = new System.Drawing.Size(643, 13);
             this.label119.TabIndex = 2;
-            this.label119.Text = "Число каналов";
+            this.label119.Text = "Частота контроллера памяти";
             this.label119.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label120
@@ -3026,7 +3019,7 @@ namespace TheHardwareMonitor
             this.groupBox10.Size = new System.Drawing.Size(778, 273);
             this.groupBox10.TabIndex = 6;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Процессор";
+            this.groupBox10.Text = "Тайминги";
             // 
             // flowLayoutPanel58
             // 
@@ -3070,7 +3063,7 @@ namespace TheHardwareMonitor
             this.label127.Name = "label127";
             this.label127.Size = new System.Drawing.Size(643, 13);
             this.label127.TabIndex = 2;
-            this.label127.Text = "Число каналов";
+            this.label127.Text = "Частота памяти";
             this.label127.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label128
@@ -3142,7 +3135,7 @@ namespace TheHardwareMonitor
             this.label115.Name = "label115";
             this.label115.Size = new System.Drawing.Size(643, 13);
             this.label115.TabIndex = 2;
-            this.label115.Text = "Число каналов";
+            this.label115.Text = "Соотношение частоты памяти и системно шины";
             this.label115.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label116
@@ -3178,7 +3171,7 @@ namespace TheHardwareMonitor
             this.label121.Name = "label121";
             this.label121.Size = new System.Drawing.Size(643, 13);
             this.label121.TabIndex = 2;
-            this.label121.Text = "Число каналов";
+            this.label121.Text = "Мин время между подачей команды на чтение (CAS#) и наччалом передачи данных";
             this.label121.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label122
@@ -3251,7 +3244,7 @@ namespace TheHardwareMonitor
             this.label125.Name = "label125";
             this.label125.Size = new System.Drawing.Size(643, 13);
             this.label125.TabIndex = 2;
-            this.label125.Text = "Число каналов";
+            this.label125.Text = "Время: необходимое для предварительного заряда банка";
             this.label125.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label126
@@ -3287,7 +3280,7 @@ namespace TheHardwareMonitor
             this.label129.Name = "label129";
             this.label129.Size = new System.Drawing.Size(643, 13);
             this.label129.TabIndex = 2;
-            this.label129.Text = "Число каналов";
+            this.label129.Text = "Минимальное время активности строки";
             this.label129.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label130
@@ -3323,7 +3316,7 @@ namespace TheHardwareMonitor
             this.label131.Name = "label131";
             this.label131.Size = new System.Drawing.Size(643, 13);
             this.label131.TabIndex = 2;
-            this.label131.Text = "Число каналов";
+            this.label131.Text = "Минимальное время между двумя цикалми регенерации (tRFC)";
             this.label131.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label132
@@ -3359,7 +3352,7 @@ namespace TheHardwareMonitor
             this.label133.Name = "label133";
             this.label133.Size = new System.Drawing.Size(643, 13);
             this.label133.TabIndex = 2;
-            this.label133.Text = "Число каналов";
+            this.label133.Text = "Время: необходимое для декодирования контроллером команд и адресов";
             this.label133.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label134
@@ -3395,7 +3388,8 @@ namespace TheHardwareMonitor
             this.label137.Name = "label137";
             this.label137.Size = new System.Drawing.Size(643, 13);
             this.label137.TabIndex = 2;
-            this.label137.Text = "Число каналов";
+            this.label137.Text = "Чиало тактов, через которое контроллер памяти принудительно закрывает и предзаряж" +
+    "ает";
             this.label137.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label138
@@ -3431,7 +3425,7 @@ namespace TheHardwareMonitor
             this.label139.Name = "label139";
             this.label139.Size = new System.Drawing.Size(643, 13);
             this.label139.TabIndex = 2;
-            this.label139.Text = "Число каналов";
+            this.label139.Text = "Тайминг, используемый памятью RDRAM";
             this.label139.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label140
@@ -3467,7 +3461,7 @@ namespace TheHardwareMonitor
             this.label143.Name = "label143";
             this.label143.Size = new System.Drawing.Size(643, 13);
             this.label143.TabIndex = 2;
-            this.label143.Text = "Число каналов";
+            this.label143.Text = "Минимальное время между открытием строки и операцией над столбцом в этой строке";
             this.label143.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label144
@@ -3514,7 +3508,7 @@ namespace TheHardwareMonitor
             this.groupBox11.Size = new System.Drawing.Size(778, 172);
             this.groupBox11.TabIndex = 5;
             this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Процессор";
+            this.groupBox11.Text = "Выбор слота памяти";
             // 
             // comboBox2
             // 
@@ -3533,12 +3527,12 @@ namespace TheHardwareMonitor
             this.label150.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label150.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label150.Location = new System.Drawing.Point(164, 21);
-            this.label150.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label150.MinimumSize = new System.Drawing.Size(300, 0);
             this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(100, 15);
+            this.label150.Size = new System.Drawing.Size(300, 15);
             this.label150.TabIndex = 1;
             this.label150.Text = "DDR3";
-            this.label150.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label150.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // flowLayoutPanel72
             // 
@@ -3577,7 +3571,7 @@ namespace TheHardwareMonitor
             this.label145.Name = "label145";
             this.label145.Size = new System.Drawing.Size(220, 13);
             this.label145.TabIndex = 0;
-            this.label145.Text = "Максимальная пропускная способность";
+            this.label145.Text = "Объём модуля в мегабайтах";
             this.label145.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label146
@@ -3603,7 +3597,7 @@ namespace TheHardwareMonitor
             this.label147.Name = "label147";
             this.label147.Size = new System.Drawing.Size(250, 13);
             this.label147.TabIndex = 2;
-            this.label147.Text = "Максимальная пропускная способность";
+            this.label147.Text = "Наличие у модуля коррекции ошибок";
             this.label147.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label148
@@ -3667,7 +3661,7 @@ namespace TheHardwareMonitor
             this.label152.Name = "label152";
             this.label152.Size = new System.Drawing.Size(250, 13);
             this.label152.TabIndex = 2;
-            this.label152.Text = "Максимальная пропускная способность";
+            this.label152.Text = "Наличие регистровой памяти";
             this.label152.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label153
@@ -3705,7 +3699,7 @@ namespace TheHardwareMonitor
             this.label154.Name = "label154";
             this.label154.Size = new System.Drawing.Size(220, 13);
             this.label154.TabIndex = 0;
-            this.label154.Text = "Максимальная пропускная способность";
+            this.label154.Text = "Производитель модуля памяти";
             this.label154.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label155
@@ -3731,7 +3725,7 @@ namespace TheHardwareMonitor
             this.label156.Name = "label156";
             this.label156.Size = new System.Drawing.Size(250, 13);
             this.label156.TabIndex = 2;
-            this.label156.Text = "Максимальная пропускная способность";
+            this.label156.Text = "Ranks";
             this.label156.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label157
@@ -3769,7 +3763,7 @@ namespace TheHardwareMonitor
             this.label158.Name = "label158";
             this.label158.Size = new System.Drawing.Size(220, 13);
             this.label158.TabIndex = 0;
-            this.label158.Text = "Максимальная пропускная способность";
+            this.label158.Text = "Номер партии";
             this.label158.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label159
@@ -3795,7 +3789,7 @@ namespace TheHardwareMonitor
             this.label160.Name = "label160";
             this.label160.Size = new System.Drawing.Size(250, 13);
             this.label160.TabIndex = 2;
-            this.label160.Text = "Максимальная пропускная способность";
+            this.label160.Text = "Наличие расширений SPD";
             this.label160.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label161
@@ -3833,7 +3827,7 @@ namespace TheHardwareMonitor
             this.label162.Name = "label162";
             this.label162.Size = new System.Drawing.Size(220, 13);
             this.label162.TabIndex = 0;
-            this.label162.Text = "Максимальная пропускная способность";
+            this.label162.Text = "Серийный номер модуля";
             this.label162.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label163
@@ -3859,7 +3853,7 @@ namespace TheHardwareMonitor
             this.label164.Name = "label164";
             this.label164.Size = new System.Drawing.Size(250, 13);
             this.label164.TabIndex = 2;
-            this.label164.Text = "Максимальная пропускная способность";
+            this.label164.Text = "Неделя/год";
             this.label164.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label165
@@ -3881,10 +3875,10 @@ namespace TheHardwareMonitor
             this.groupBox12.Controls.Add(this.flowLayoutPanel76);
             this.groupBox12.Location = new System.Drawing.Point(3, 181);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(778, 212);
+            this.groupBox12.Size = new System.Drawing.Size(778, 192);
             this.groupBox12.TabIndex = 6;
             this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Процессор";
+            this.groupBox12.Text = "Таблица таймингов для разных частот";
             // 
             // flowLayoutPanel76
             // 
@@ -3901,10 +3895,9 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel85);
             this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel86);
             this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel87);
-            this.flowLayoutPanel76.Controls.Add(this.flowLayoutPanel88);
             this.flowLayoutPanel76.Location = new System.Drawing.Point(2, 12);
             this.flowLayoutPanel76.Name = "flowLayoutPanel76";
-            this.flowLayoutPanel76.Size = new System.Drawing.Size(770, 194);
+            this.flowLayoutPanel76.Size = new System.Drawing.Size(770, 174);
             this.flowLayoutPanel76.TabIndex = 1;
             // 
             // flowLayoutPanel79
@@ -3946,7 +3939,7 @@ namespace TheHardwareMonitor
             this.label172.Name = "label172";
             this.label172.Size = new System.Drawing.Size(80, 13);
             this.label172.TabIndex = 7;
-            this.label172.Text = "Ыштпду";
+            this.label172.Text = "JEDEC #3";
             this.label172.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label173
@@ -3959,7 +3952,7 @@ namespace TheHardwareMonitor
             this.label173.Name = "label173";
             this.label173.Size = new System.Drawing.Size(80, 13);
             this.label173.TabIndex = 8;
-            this.label173.Text = "Ыштпду";
+            this.label173.Text = "JEDEC #4";
             this.label173.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label174
@@ -3972,7 +3965,7 @@ namespace TheHardwareMonitor
             this.label174.Name = "label174";
             this.label174.Size = new System.Drawing.Size(80, 13);
             this.label174.TabIndex = 9;
-            this.label174.Text = "Ыштпду";
+            this.label174.Text = "JEDEC #5";
             this.label174.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label175
@@ -3985,7 +3978,7 @@ namespace TheHardwareMonitor
             this.label175.Name = "label175";
             this.label175.Size = new System.Drawing.Size(80, 13);
             this.label175.TabIndex = 10;
-            this.label175.Text = "Ыштпду";
+            this.label175.Text = "JEDEC #6";
             this.label175.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel80
@@ -4014,7 +4007,7 @@ namespace TheHardwareMonitor
             this.label176.Name = "label176";
             this.label176.Size = new System.Drawing.Size(420, 13);
             this.label176.TabIndex = 6;
-            this.label176.Text = "Миниальное время между подачей поманды на чтение";
+            this.label176.Text = "Частота";
             this.label176.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label177
@@ -4184,7 +4177,7 @@ namespace TheHardwareMonitor
             this.label181.Name = "label181";
             this.label181.Size = new System.Drawing.Size(420, 13);
             this.label181.TabIndex = 6;
-            this.label181.Text = "Миниальное время между подачей поманды на чтение";
+            this.label181.Text = "Время: необходимое для активации строки банка";
             this.label181.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label182
@@ -4269,7 +4262,7 @@ namespace TheHardwareMonitor
             this.label186.Name = "label186";
             this.label186.Size = new System.Drawing.Size(420, 13);
             this.label186.TabIndex = 6;
-            this.label186.Text = "Миниальное время между подачей поманды на чтение";
+            this.label186.Text = "Время, необходимое для предварительного заряда банка";
             this.label186.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label187
@@ -4354,7 +4347,7 @@ namespace TheHardwareMonitor
             this.label191.Name = "label191";
             this.label191.Size = new System.Drawing.Size(420, 13);
             this.label191.TabIndex = 6;
-            this.label191.Text = "Миниальное время между подачей поманды на чтение";
+            this.label191.Text = "Минимальное время активности строки";
             this.label191.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label192
@@ -4439,7 +4432,7 @@ namespace TheHardwareMonitor
             this.label196.Name = "label196";
             this.label196.Size = new System.Drawing.Size(420, 13);
             this.label196.TabIndex = 6;
-            this.label196.Text = "Миниальное время между подачей поманды на чтение";
+            this.label196.Text = "Минимальное время между активацией строк одного банка";
             this.label196.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label197
@@ -4524,7 +4517,7 @@ namespace TheHardwareMonitor
             this.label201.Name = "label201";
             this.label201.Size = new System.Drawing.Size(420, 13);
             this.label201.TabIndex = 6;
-            this.label201.Text = "Миниальное время между подачей поманды на чтение";
+            this.label201.Text = "Время: необходимое для декодирования контроллером";
             this.label201.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label202
@@ -4609,7 +4602,7 @@ namespace TheHardwareMonitor
             this.label206.Name = "label206";
             this.label206.Size = new System.Drawing.Size(420, 13);
             this.label206.TabIndex = 6;
-            this.label206.Text = "Миниальное время между подачей поманды на чтение";
+            this.label206.Text = "Используемое напржение";
             this.label206.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label207
@@ -4668,91 +4661,6 @@ namespace TheHardwareMonitor
             this.label210.Text = "Ыштпду";
             this.label210.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // flowLayoutPanel88
-            // 
-            this.flowLayoutPanel88.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel88.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel88.Controls.Add(this.label211);
-            this.flowLayoutPanel88.Controls.Add(this.label212);
-            this.flowLayoutPanel88.Controls.Add(this.label213);
-            this.flowLayoutPanel88.Controls.Add(this.label214);
-            this.flowLayoutPanel88.Controls.Add(this.label215);
-            this.flowLayoutPanel88.Location = new System.Drawing.Point(3, 174);
-            this.flowLayoutPanel88.MinimumSize = new System.Drawing.Size(0, 13);
-            this.flowLayoutPanel88.Name = "flowLayoutPanel88";
-            this.flowLayoutPanel88.Size = new System.Drawing.Size(770, 13);
-            this.flowLayoutPanel88.TabIndex = 20;
-            // 
-            // label211
-            // 
-            this.label211.AutoSize = true;
-            this.label211.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label211.Location = new System.Drawing.Point(3, 0);
-            this.label211.MinimumSize = new System.Drawing.Size(420, 0);
-            this.label211.Name = "label211";
-            this.label211.Size = new System.Drawing.Size(420, 13);
-            this.label211.TabIndex = 6;
-            this.label211.Text = "Миниальное время между подачей поманды на чтение";
-            this.label211.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label212
-            // 
-            this.label212.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label212.AutoSize = true;
-            this.label212.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label212.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label212.Location = new System.Drawing.Point(429, 0);
-            this.label212.MinimumSize = new System.Drawing.Size(80, 0);
-            this.label212.Name = "label212";
-            this.label212.Size = new System.Drawing.Size(80, 15);
-            this.label212.TabIndex = 7;
-            this.label212.Text = "Ыштпду";
-            this.label212.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label213
-            // 
-            this.label213.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label213.AutoSize = true;
-            this.label213.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label213.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label213.Location = new System.Drawing.Point(515, 0);
-            this.label213.MinimumSize = new System.Drawing.Size(80, 0);
-            this.label213.Name = "label213";
-            this.label213.Size = new System.Drawing.Size(80, 15);
-            this.label213.TabIndex = 8;
-            this.label213.Text = "Ыштпду";
-            this.label213.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label214
-            // 
-            this.label214.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label214.AutoSize = true;
-            this.label214.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label214.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label214.Location = new System.Drawing.Point(601, 0);
-            this.label214.MinimumSize = new System.Drawing.Size(80, 0);
-            this.label214.Name = "label214";
-            this.label214.Size = new System.Drawing.Size(80, 15);
-            this.label214.TabIndex = 9;
-            this.label214.Text = "Ыштпду";
-            this.label214.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label215
-            // 
-            this.label215.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label215.AutoSize = true;
-            this.label215.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label215.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label215.Location = new System.Drawing.Point(687, 0);
-            this.label215.MinimumSize = new System.Drawing.Size(80, 0);
-            this.label215.Name = "label215";
-            this.label215.Size = new System.Drawing.Size(80, 15);
-            this.label215.TabIndex = 10;
-            this.label215.Text = "Ыштпду";
-            this.label215.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // tabPageGraphics
             // 
             this.tabPageGraphics.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -4785,7 +4693,7 @@ namespace TheHardwareMonitor
             this.groupBox13.Size = new System.Drawing.Size(778, 49);
             this.groupBox13.TabIndex = 5;
             this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Процессор";
+            this.groupBox13.Text = "Выбор устройства отображения";
             // 
             // comboBox3
             // 
@@ -4827,7 +4735,7 @@ namespace TheHardwareMonitor
             this.groupBox14.Size = new System.Drawing.Size(778, 117);
             this.groupBox14.TabIndex = 6;
             this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Процессор";
+            this.groupBox14.Text = "Графический процессор";
             // 
             // flowLayoutPanel96
             // 
@@ -4863,7 +4771,7 @@ namespace TheHardwareMonitor
             this.label238.Name = "label238";
             this.label238.Size = new System.Drawing.Size(250, 13);
             this.label238.TabIndex = 0;
-            this.label238.Text = "Максимальная пропускная способность";
+            this.label238.Text = "Название видеокарты";
             this.label238.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label239
@@ -4899,7 +4807,7 @@ namespace TheHardwareMonitor
             this.label217.Name = "label217";
             this.label217.Size = new System.Drawing.Size(250, 13);
             this.label217.TabIndex = 0;
-            this.label217.Text = "Максимальная пропускная способность";
+            this.label217.Text = "Изготовитель карты";
             this.label217.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label218
@@ -4937,7 +4845,7 @@ namespace TheHardwareMonitor
             this.label219.Name = "label219";
             this.label219.Size = new System.Drawing.Size(250, 13);
             this.label219.TabIndex = 0;
-            this.label219.Text = "Максимальная пропускная способность";
+            this.label219.Text = "Кодовое название видеочипа";
             this.label219.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label220
@@ -4963,7 +4871,7 @@ namespace TheHardwareMonitor
             this.label221.Name = "label221";
             this.label221.Size = new System.Drawing.Size(100, 13);
             this.label221.TabIndex = 2;
-            this.label221.Text = "развитие";
+            this.label221.Text = "Ревизия";
             this.label221.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label222
@@ -4999,7 +4907,7 @@ namespace TheHardwareMonitor
             this.label223.Name = "label223";
             this.label223.Size = new System.Drawing.Size(250, 13);
             this.label223.TabIndex = 0;
-            this.label223.Text = "Максимальная пропускная способность";
+            this.label223.Text = "Технологический процесс";
             this.label223.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label224
@@ -5024,7 +4932,7 @@ namespace TheHardwareMonitor
             this.groupBox15.Size = new System.Drawing.Size(345, 95);
             this.groupBox15.TabIndex = 7;
             this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Процессор";
+            this.groupBox15.Text = "Частота";
             // 
             // flowLayoutPanel93
             // 
@@ -5095,7 +5003,7 @@ namespace TheHardwareMonitor
             this.label227.Name = "label227";
             this.label227.Size = new System.Drawing.Size(150, 13);
             this.label227.TabIndex = 0;
-            this.label227.Text = "Частота ядра видеочипа";
+            this.label227.Text = "Шейдеры";
             this.label227.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label228
@@ -5131,7 +5039,7 @@ namespace TheHardwareMonitor
             this.label229.Name = "label229";
             this.label229.Size = new System.Drawing.Size(150, 13);
             this.label229.TabIndex = 0;
-            this.label229.Text = "Частота ядра видеочипа";
+            this.label229.Text = "Частота видеопамяти";
             this.label229.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label230
@@ -5156,7 +5064,7 @@ namespace TheHardwareMonitor
             this.groupBox16.Size = new System.Drawing.Size(427, 95);
             this.groupBox16.TabIndex = 8;
             this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "Процессор";
+            this.groupBox16.Text = "Память";
             // 
             // flowLayoutPanel99
             // 
@@ -5191,7 +5099,7 @@ namespace TheHardwareMonitor
             this.label231.Name = "label231";
             this.label231.Size = new System.Drawing.Size(150, 13);
             this.label231.TabIndex = 0;
-            this.label231.Text = "Частота ядра видеочипа";
+            this.label231.Text = "Объем видеопамяти";
             this.label231.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label232
@@ -5227,7 +5135,7 @@ namespace TheHardwareMonitor
             this.label233.Name = "label233";
             this.label233.Size = new System.Drawing.Size(150, 13);
             this.label233.TabIndex = 0;
-            this.label233.Text = "Частота ядра видеочипа";
+            this.label233.Text = "Тип памяти";
             this.label233.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label234
@@ -5263,7 +5171,7 @@ namespace TheHardwareMonitor
             this.label235.Name = "label235";
             this.label235.Size = new System.Drawing.Size(150, 13);
             this.label235.TabIndex = 0;
-            this.label235.Text = "Частота ядра видеочипа";
+            this.label235.Text = "Ширина шины памяти";
             this.label235.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label236
@@ -5315,7 +5223,7 @@ namespace TheHardwareMonitor
             this.groupBox18.Size = new System.Drawing.Size(778, 70);
             this.groupBox18.TabIndex = 9;
             this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Процессор";
+            this.groupBox18.Text = "Однопроцессорный поток";
             // 
             // label241
             // 
@@ -5396,7 +5304,7 @@ namespace TheHardwareMonitor
             this.groupBox20.Size = new System.Drawing.Size(778, 94);
             this.groupBox20.TabIndex = 8;
             this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Процессор";
+            this.groupBox20.Text = "Многопроцессорный поток";
             // 
             // colorProgressBar3
             // 
@@ -5530,7 +5438,7 @@ namespace TheHardwareMonitor
             this.label242.AutoSize = true;
             this.label242.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label242.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label242.Location = new System.Drawing.Point(665, 37);
+            this.label242.Location = new System.Drawing.Point(665, 41);
             this.label242.Name = "label242";
             this.label242.Size = new System.Drawing.Size(40, 16);
             this.label242.TabIndex = 16;
@@ -5542,7 +5450,7 @@ namespace TheHardwareMonitor
             this.label243.AutoSize = true;
             this.label243.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label243.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label243.Location = new System.Drawing.Point(665, 35);
+            this.label243.Location = new System.Drawing.Point(665, 39);
             this.label243.Name = "label243";
             this.label243.Size = new System.Drawing.Size(40, 16);
             this.label243.TabIndex = 18;
@@ -5762,8 +5670,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel86.PerformLayout();
             this.flowLayoutPanel87.ResumeLayout(false);
             this.flowLayoutPanel87.PerformLayout();
-            this.flowLayoutPanel88.ResumeLayout(false);
-            this.flowLayoutPanel88.PerformLayout();
             this.tabPageGraphics.ResumeLayout(false);
             this.flowLayoutPanel89.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
@@ -6136,12 +6042,6 @@ namespace TheHardwareMonitor
         private System.Windows.Forms.Label label208;
         private System.Windows.Forms.Label label209;
         private System.Windows.Forms.Label label210;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel88;
-        private System.Windows.Forms.Label label211;
-        private System.Windows.Forms.Label label212;
-        private System.Windows.Forms.Label label213;
-        private System.Windows.Forms.Label label214;
-        private System.Windows.Forms.Label label215;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel89;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.ComboBox comboBox3;
