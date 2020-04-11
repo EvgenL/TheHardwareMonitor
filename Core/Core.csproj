@@ -51,6 +51,7 @@
     <Compile Include="Hardware.cs" />
     <Compile Include="Mainboard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ram.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

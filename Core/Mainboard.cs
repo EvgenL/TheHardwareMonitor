@@ -32,9 +32,9 @@ namespace Core
                 return null;
             }
         }
-        public static string manufacturer => baseBoard?.Manufacturer;
-        public static string model => baseBoard?.Product;
-        public static string modelRev => baseBoard?.Version;
+        public static string manufacturer => baseBoard != null ? baseBoard.Manufacturer : "";
+        public static string model => baseBoard != null ? baseBoard.Product : "";
+        public static string modelRev => baseBoard != null ? baseBoard.Version : "";
         public static string chipsetName => "nan";
         public static string chipsetNumber => "nan";
         public static string chipsetRev => "nan";
@@ -43,12 +43,9 @@ namespace Core
         public static string southBridgeRev => "";
         public static string lpcioBridgeName => "";
         public static string lpcioBridgeNumber => "";
-        public static string biosBrand => bios?.Manufacturer;
-        public static string biosVersion => bios?.SMBIOSBIOSVersion;
-        public static string biosDate => bios?.ReleaseDate.ToString();
-        public static string gbusVersion => motheroard?.PrimaryBusType;
-        public static string gbusMode => "";
-        public static string gbusMaxMode => "";
-        public static string gbusAgp => "";
+        public static string biosBrand => bios != null ? bios.Manufacturer : "";
+        public static string biosVersion => bios != null ? bios.SMBIOSBIOSVersion : "";
+        public static string biosDate => bios != null ? bios.ReleaseDate.ToString() : "";
+        public static string gbusVersion => motheroard != null ? motheroard.PrimaryBusType : "";
     }
 }

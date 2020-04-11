@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using Core;
 
@@ -6,6 +8,11 @@ namespace TheHardwareMonitor
 {
     public partial class MainForm : Form
     {
+        private Dictionary<string, Tuple<int, int>> cpuBenches = new Dictionary<string, Tuple<int, int>>()
+        {
+            { "intel core i3-2120", Tuple.Create<int, int>(346, 288) },
+        };
+
         public MainForm()
         {
             InitializeComponent();
@@ -19,7 +26,6 @@ namespace TheHardwareMonitor
             tabPageCachesInit(this);
             tabPageMainboardInit(this);
             tabPageMemoryInit(this);
-            tabPageSpdInit(this);
             tabPageGraphicsInit(this);
             tabPageBenchInit(this);
         }
@@ -32,10 +38,6 @@ namespace TheHardwareMonitor
         private void tabPageCpuInit(object sender)
         {
             labelValue.Text = Cpu.currentProcessorName;
-            label2.Text = Cpu.codename;
-            label4.Text = Cpu.heatDiss;
-            label6.Text = Cpu.package;
-            label8.Text = Cpu.thickness;
             label10.Text = Cpu.voltage;
             label12.Text = Cpu.specification;
             label14.Text = Cpu.familyNumber;
@@ -44,7 +46,6 @@ namespace TheHardwareMonitor
             label20.Text = Cpu.extFamily;
             label22.Text = Cpu.extModel;
             label24.Text = Cpu.coreRevision;
-            label26.Text = Cpu.instructions;
 
             label30.Text = Cpu.clock;
             label28.Text = Cpu.multiplier;
@@ -69,7 +70,6 @@ namespace TheHardwareMonitor
                     comboBox1.Items.Add(cpu);
                 }
                 comboBox1.Click += onCombo1Click();
-                comboBox1.SelectedIndex = 0;
             }
 
             label70.Text = Cpu.coreCount;
@@ -113,21 +113,39 @@ namespace TheHardwareMonitor
             label82.Text = Mainboard.biosBrand;
             label80.Text = Mainboard.biosVersion;
             label105.Text = Mainboard.biosVersion;
-            label85.Text = Mainboard.gbusVersion;
-            label87.Text = Mainboard.gbusMode;
-            label88.Text = Mainboard.gbusMaxMode;
-            label108.Text = Mainboard.gbusAgp;
         }
 
         private void tabPageMemoryInit(object sender)
         {
 
-            
-        }
-        private void tabPageSpdInit(object sender)
-        {
+            // dropdown
+            if (sender == this)
+            {
+                comboBox2.Items.Clear();
+                foreach (var ram in Ram.ramsNames)
+                {
+                    comboBox2.Items.Add(ram);
+                }
+                comboBox2.Click += onCombo2Click();
+            }
+            label110.Text = Ram.memType;
+            label112.Text = Ram.memSize;
+            label136.Text = Ram.manufacturer;
+            label114.Text = Ram.number;
+            label120.Text = Ram.controllerClock;
+            label128.Text = Ram.ramClock;
+            label122.Text = Ram.wordWidth;
+            label124.Text = Ram.formFactor;
 
         }
+        private EventHandler onCombo2Click()
+        {
+            Ram.selectedDevice = Math.Max(0, comboBox2.SelectedIndex);
+            tabPageMemoryInit(comboBox2);
+
+            return null;
+        }
+
 
         private void tabPageGraphicsInit(object sender)
         {
@@ -140,7 +158,6 @@ namespace TheHardwareMonitor
                     comboBox3.Items.Add(gpu);
                 }
                 comboBox3.Click += onCombo3Click();
-                comboBox3.SelectedIndex = 0;
             }
 
             label239.Text = Gpu.name;
@@ -170,19 +187,29 @@ namespace TheHardwareMonitor
         {
             button1.Click += onRunTestClick;
 
-            int cores = int.Parse(Cpu.coreCount);
-
+            int cores = int.Parse(Cpu.logicalCoreCount);
+            comboBox7.Items.Clear();
             for (int i = 0; i < cores; i++)
             {
                 comboBox7.Items.Add(i + 1);
             }
-            comboBox7.SelectedIndex = cores;
+            comboBox7.SelectedIndex = cores - 1;
+
+            comboBox6.Items.Clear();
+            var it = cpuBenches.GetEnumerator();
+            while (it.MoveNext())
+            {
+                comboBox6.Items.Add(it.Current.Key);
+            }
+            comboBox6.SelectedIndex = 0;
         }
 
         private bool testIsRunning = false;
 
         private void onRunTestClick(object sender, EventArgs e)
         {
+            label241.Text = label244.Text = "~";
+            singlethreadBar.Value = multithreadBar.Value = 0;
             if (testIsRunning) return;
             testIsRunning = true;
             button1.Enabled = false;
@@ -190,33 +217,59 @@ namespace TheHardwareMonitor
             var bench = new Benchmark();
             int coresCount = comboBox7.SelectedIndex;
             if (!checkBox3.Checked) coresCount = 1;
-            bench.RunBenchmark(1, onProgressUpdate, (result) =>
+            bench.RunBenchmark(1, (result) => {
+            OnProgressUpdate(result, singlethreadBar, singlethreadBarReference, label241);
+            },
+            (result) =>
             {
-                onProgressUpdate(result);
-                bench.RunBenchmark(coresCount, onProgressUpdateMultithread, onBenchEnd);
+                OnProgressUpdate(result, singlethreadBar, singlethreadBarReference, label241);
+                bench.RunBenchmark(coresCount, (finalResult) =>
+                {
+                    OnProgressUpdate(finalResult, multithreadBar, multithreadBarReference, label244);
+                }, onBenchEnd);
             });
         }
 
-        private void onProgressUpdate(int result)
+        private void OnProgressUpdate(int result, ColorProgressBar.ColorProgressBar bar, ColorProgressBar.ColorProgressBar referenceBar, Label label)
         {
-            if (result > colorProgressBar1.Maximum) colorProgressBar1.Maximum = result;
-            colorProgressBar1.Value = result;
-            label241.Invoke(new Action(() => label241.Text = result.ToString()));
+            BenchBarValueSet(result, bar, referenceBar);
+            label.Invoke(new Action(() => label.Text = result + " мс"));
             
         }
 
-        private void onProgressUpdateMultithread(int result)
-        {
-            if (result > colorProgressBar3.Maximum) colorProgressBar3.Maximum = result;
-            colorProgressBar3.Value = result;
-            label244.Invoke(new Action(() => label244.Text = result.ToString()));
-        }
+        private int barMax = 0;
 
+        private void BenchBarValueSet(int value, ColorProgressBar.ColorProgressBar bar, ColorProgressBar.ColorProgressBar barPaired)
+        {
+            while (barMax < value)
+            {
+                barMax += 500;
+            }
+
+            if (barMax > bar.Maximum)
+            {
+                bar.Maximum = barMax;
+                barPaired.Maximum = barMax;
+            }
+            bar.Value = barMax - value;
+        }
         private void onBenchEnd(int result)
         {
-            onProgressUpdate(result);
+            OnProgressUpdate(result, multithreadBar, multithreadBarReference, label244);
             testIsRunning = false;
             button1.Invoke(new Action(() => button1.Enabled = true));
+        }
+
+        private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int i = comboBox6.SelectedIndex;
+            string cpu = comboBox6.Items[i].ToString();
+            var values = cpuBenches[cpu];
+
+            BenchBarValueSet(values.Item1, singlethreadBarReference, singlethreadBar);
+            label242.Text = values.Item1 + " мс";
+            BenchBarValueSet(values.Item2, multithreadBarReference, multithreadBar);
+            label243.Text = values.Item1 + " мс";
         }
     }
 }

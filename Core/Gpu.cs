@@ -15,18 +15,17 @@ namespace Core
         private static CIMv2.Win32VideoController[] cards
             => Hardware.context.CIMv2.Win32VideoControllers.ToArray();
         private static CIMv2.Win32VideoController currGpu
-            => cards[currGpuIndex];
-        public static string[] cardsNames => cards.Select(x => x.Name).ToArray();
-        public static string[] levels => new[] {"High", "Medium", "Low"};
-        public static string name => currGpu.Name;
-        public static string manufacturer => currGpu.AdapterCompatibility;
-        public static string codename => currGpu.VideoProcessor;
-        public static string rev => currGpu.SpecificationVersion.ToString();
+            => cards.Length > 0 ? cards[currGpuIndex] : null;
+        public static string[] cardsNames => cards.Length > 0  ? cards.Select(x => x.Name).ToArray() : new string[0];
+        public static string name => currGpu != null ? currGpu.Name : "";
+        public static string manufacturer => currGpu != null ? currGpu.AdapterCompatibility : "";
+        public static string codename => currGpu != null ? currGpu.VideoProcessor : "";
+        public static string rev => currGpu != null ? currGpu.SpecificationVersion.ToString() : "";
         public static string thicc => "";
         public static string coreClock => "";
         public static string shaders => "";
         public static string videoClock => "";
-        public static string memSize => currGpu.MaxMemorySupported != 0 ? currGpu.MaxMemorySupported / 1024 / 1024 + " Мб" : "";
+        public static string memSize => currGpu != null ? currGpu.MaxMemorySupported != 0 ? currGpu.MaxMemorySupported / 1024 / 1024 + " Мб" : "" : "";
         public static string memType => Enum.GetName(typeof(CIMv2.Win32VideoControllerVideoMemoryType), currGpu.VideoMemoryType);
         public static string memWidth => Hardware.context.CIMv2.Win32PhysicalMemories.ToList().Count > 0 ? Hardware.context.CIMv2.Win32PhysicalMemories.ToList()[0].DataWidth / 8 + " Байт" : "";
 

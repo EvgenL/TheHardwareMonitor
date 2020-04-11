@@ -11,7 +11,7 @@ namespace Core
     public class Benchmark
     {
 
-        private const int ITER_COUNT = 100000000;
+        private const int ITER_COUNT = 200000000;
         private const int ROUNDS = 10;
 
         private int avgTime = 0;
@@ -20,6 +20,7 @@ namespace Core
         public void RunBenchmark(int threads, Action<int> onUpdate, Action<int> onComplete)
         {
             avgTime = 0;
+            roundsDone = 0;
             ThreadPool.SetMaxThreads(threads, threads);
             for (int i = 0; i < ROUNDS; i++)
             {

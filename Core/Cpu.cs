@@ -37,21 +37,21 @@ namespace Core
         public static string heatDiss => "nan";
         public static string package => "nan";
         public static string thickness => "nan";
-        public static string voltage => (currCpu.CurrentVoltage / 10f).ToString();
-        public static string specification => currCpu.Name;
-        public static string familyNumber => currCpu.Family.ToString();
-        public static string model => ((int)currCpu.ProcessorType).ToString();
-        public static string internalVersion => currCpu.Version;
-        public static string extFamily => currCpu.Family.ToString();
+        public static string voltage => (currCpu != null ? (currCpu.CurrentVoltage / 10f).ToString() : "");
+        public static string specification => (currCpu != null ? currCpu.Name : "");
+        public static string familyNumber => (currCpu != null ? currCpu.Family.ToString() : "");
+        public static string model => (currCpu != null ? ((int)currCpu.ProcessorType).ToString() : "");
+        public static string internalVersion => (currCpu != null ? currCpu.Version : "");
+        public static string extFamily => (currCpu != null ? currCpu.Family.ToString() : "");
         public static string extModel => model;
-        public static string coreRevision => currCpu.Version;
-        public static string instructions => currCpu.SocketDesignation;
+        public static string coreRevision => (currCpu != null ? currCpu.Version : "");
+        public static string instructions => (currCpu != null ? currCpu.SocketDesignation : "");
 
         // frequency
-        public static string clock => currCpu.CurrentClockSpeed + " Мгц";
-        public static string multiplier => (currCpu.CurrentClockSpeed / Math.Max(currCpu.ExtClock, 1)).ToString("N1");
-        public static string outerFreq => currCpu.ExtClock + " Мгц";
-        public static string effectiveFreq => currCpu.MaxClockSpeed + " Мгц";
+        public static string clock => (currCpu != null ? currCpu.CurrentClockSpeed + " Мгц" : "");
+        public static string multiplier => (currCpu != null ? (currCpu.CurrentClockSpeed / Math.Max(currCpu.ExtClock, 1)).ToString("N1") : "");
+        public static string outerFreq => (currCpu != null ? currCpu.ExtClock + " Мгц" : "");
+        public static string effectiveFreq => (currCpu != null ? currCpu.MaxClockSpeed + " Мгц" : "");
 
         // chache info
         public static string level1cacheData => Cache.HasData ? Cache.Data.InstalledSize + " Кб" : "";
@@ -66,8 +66,8 @@ namespace Core
         public static string level3cacheAssociativity => Cache.HasL3 ? Cache.AsscToStr(Cache.L3.Associativity) : "";
 
         // other
-        public static string coreCount => currCpu.NumberOfCores.ToString();
-        public static string logicalCoreCount => currCpu.NumberOfLogicalProcessors.ToString();
+        public static string coreCount => (currCpu != null ? currCpu.NumberOfCores.ToString() : "");
+        public static string logicalCoreCount => (currCpu != null ? currCpu.NumberOfLogicalProcessors.ToString() : "");
 
 
         private static class Cache
