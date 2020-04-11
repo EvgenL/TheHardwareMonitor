@@ -572,7 +572,6 @@ namespace TheHardwareMonitor
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(798, 419);
             this.mainTabControl.TabIndex = 0;
-            this.mainTabControl.Click += new System.EventHandler(this.mainTabControl_Click);
             // 
             // tabPageCpu
             // 
@@ -587,7 +586,6 @@ namespace TheHardwareMonitor
             this.tabPageCpu.Size = new System.Drawing.Size(790, 393);
             this.tabPageCpu.TabIndex = 0;
             this.tabPageCpu.Text = "ЦП";
-            this.tabPageCpu.Click += new System.EventHandler(this.tabPageCpu_Click);
             // 
             // groupBoxProcessor
             // 
@@ -1649,7 +1647,6 @@ namespace TheHardwareMonitor
             this.tabPageCaches.Size = new System.Drawing.Size(790, 393);
             this.tabPageCaches.TabIndex = 1;
             this.tabPageCaches.Text = "Кэш";
-            this.tabPageCaches.Click += new System.EventHandler(this.tabPageCaches_Click);
             // 
             // flowLayoutPanel25
             // 
@@ -2125,7 +2122,6 @@ namespace TheHardwareMonitor
             this.tabPageMainboard.Size = new System.Drawing.Size(790, 393);
             this.tabPageMainboard.TabIndex = 2;
             this.tabPageMainboard.Text = "Плата";
-            this.tabPageMainboard.Click += new System.EventHandler(this.tabPageMainboard_Click);
             // 
             // flowLayoutPanel40
             // 
@@ -2737,7 +2733,6 @@ namespace TheHardwareMonitor
             this.tabPageMemory.Size = new System.Drawing.Size(790, 393);
             this.tabPageMemory.TabIndex = 3;
             this.tabPageMemory.Text = "Память";
-            this.tabPageMemory.Click += new System.EventHandler(this.tabPageMemory_Click);
             // 
             // flowLayoutPanel53
             // 
@@ -3413,7 +3408,6 @@ namespace TheHardwareMonitor
             this.tabPageSpd.Size = new System.Drawing.Size(790, 393);
             this.tabPageSpd.TabIndex = 4;
             this.tabPageSpd.Text = "SPD";
-            this.tabPageSpd.Click += new System.EventHandler(this.tabPageSpd_Click);
             // 
             // flowLayoutPanel71
             // 
@@ -4597,7 +4591,6 @@ namespace TheHardwareMonitor
             this.tabPageGraphics.Size = new System.Drawing.Size(790, 393);
             this.tabPageGraphics.TabIndex = 5;
             this.tabPageGraphics.Text = "Графика";
-            this.tabPageGraphics.Click += new System.EventHandler(this.tabPageGraphics_Click);
             // 
             // flowLayoutPanel89
             // 
@@ -5125,7 +5118,6 @@ namespace TheHardwareMonitor
             this.tabPageBench.Size = new System.Drawing.Size(790, 393);
             this.tabPageBench.TabIndex = 6;
             this.tabPageBench.Text = "Тест";
-            this.tabPageBench.Click += new System.EventHandler(this.tabPageBench_Click);
             // 
             // flowLayoutPanel103
             // 

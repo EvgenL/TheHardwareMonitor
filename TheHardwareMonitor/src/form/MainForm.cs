@@ -9,7 +9,13 @@ namespace TheHardwareMonitor
         public MainForm()
         {
             InitializeComponent();
-            tabPageCpu_Click(null, null);
+
+            InitHardwareDisplay();
+        }
+
+        private void InitHardwareDisplay()
+        {
+            tabPageCpuInit(this);
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
@@ -17,11 +23,7 @@ namespace TheHardwareMonitor
             Application.Exit();
         }
 
-        private void mainTabControl_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void tabPageCpu_Click(object sender, EventArgs e)
+        private void tabPageCpuInit(object sender)
         {
             labelValue.Text = Cpu.currentProcessorName;
             label2.Text = Cpu.codename;
@@ -53,7 +55,7 @@ namespace TheHardwareMonitor
             label46.Text = Cpu.level3cacheAssociativity;
 
             // dropdown
-            if (sender != this)
+            if (sender == this)
             {
                 comboBox1.Items.Clear();
                 foreach (var cpu in Cpu.processors)
@@ -72,12 +74,12 @@ namespace TheHardwareMonitor
         private EventHandler onCombo1Click()
         {
             Cpu.currCpuIndex = Math.Max(0, comboBox1.SelectedIndex);
-            tabPageCpu_Click(this, null);
+            tabPageCpuInit(comboBox1);
 
             return null;
         }
 
-        private void tabPageCaches_Click(object sender, EventArgs e)
+        private void tabPageCachesInit(object sender)
         {
             label48.Text = Cpu.level1cacheData;
             label51.Text = Cpu.level1cacheDataAssociativity;
@@ -89,27 +91,27 @@ namespace TheHardwareMonitor
             label64.Text = Cpu.level3cacheAssociativity;
         }
 
-        private void tabPageMainboard_Click(object sender, EventArgs e)
+        private void tabPageMainboardInit(object sender)
         {
 
         }
 
-        private void tabPageMemory_Click(object sender, EventArgs e)
+        private void tabPageMemoryInit(object sender)
         {
 
         }
 
-        private void tabPageSpd_Click(object sender, EventArgs e)
+        private void tabPageSpdInit(object sender)
         {
 
         }
 
-        private void tabPageGraphics_Click(object sender, EventArgs e)
+        private void tabPageGraphicsInit(object sender)
         {
 
         }
 
-        private void tabPageBench_Click(object sender, EventArgs e)
+        private void tabPageBenchInit(object sender)
         {
 
         }
