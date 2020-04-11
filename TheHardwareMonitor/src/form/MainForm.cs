@@ -99,14 +99,31 @@ namespace TheHardwareMonitor
 
         private void tabPageMainboardInit(object sender)
         {
-
+            label90.Text = Mainboard.manufacturer;
+            label92.Text = Mainboard.model;
+            label93.Text = Mainboard.modelRev;
+            label96.Text = Mainboard.chipsetName;
+            label94.Text = Mainboard.chipsetNumber;
+            label118.Text = Mainboard.chipsetRev;
+            label98.Text = Mainboard.southBridgeName;
+            label99.Text = Mainboard.southBridgeNumber;
+            label100.Text = Mainboard.southBridgeRev;
+            label103.Text = Mainboard.lpcioBridgeName;
+            label104.Text = Mainboard.lpcioBridgeNumber;
+            label82.Text = Mainboard.biosBrand;
+            label80.Text = Mainboard.biosVersion;
+            label105.Text = Mainboard.biosVersion;
+            label85.Text = Mainboard.gbusVersion;
+            label87.Text = Mainboard.gbusMode;
+            label88.Text = Mainboard.gbusMaxMode;
+            label108.Text = Mainboard.gbusAgp;
         }
 
         private void tabPageMemoryInit(object sender)
         {
 
+            
         }
-
         private void tabPageSpdInit(object sender)
         {
 
@@ -114,12 +131,92 @@ namespace TheHardwareMonitor
 
         private void tabPageGraphicsInit(object sender)
         {
+            // dropdown
+            if (sender == this)
+            {
+                comboBox3.Items.Clear();
+                foreach (var gpu in Gpu.cardsNames)
+                {
+                    comboBox3.Items.Add(gpu);
+                }
+                comboBox3.Click += onCombo3Click();
+                comboBox3.SelectedIndex = 0;
+            }
 
+            label239.Text = Gpu.name;
+            label218.Text = Gpu.manufacturer;
+            label220.Text = Gpu.codename;
+            label222.Text = Gpu.rev;
+            label224.Text = Gpu.thicc;
+
+            label226.Text = Gpu.coreClock;
+            label228.Text = Gpu.shaders;
+            label230.Text = Gpu.videoClock;
+
+            label232.Text = Gpu.memSize;
+            label234.Text = Gpu.memType;
+            label236.Text = Gpu.memWidth;
+        }
+
+        private EventHandler onCombo3Click()
+        {
+            Gpu.currGpuIndex = Math.Max(0, comboBox3.SelectedIndex);
+            tabPageGraphicsInit(comboBox3);
+
+            return null;
         }
 
         private void tabPageBenchInit(object sender)
         {
+            button1.Click += onRunTestClick;
 
+            int cores = int.Parse(Cpu.coreCount);
+
+            for (int i = 0; i < cores; i++)
+            {
+                comboBox7.Items.Add(i + 1);
+            }
+            comboBox7.SelectedIndex = cores;
+        }
+
+        private bool testIsRunning = false;
+
+        private void onRunTestClick(object sender, EventArgs e)
+        {
+            if (testIsRunning) return;
+            testIsRunning = true;
+            button1.Enabled = false;
+
+            var bench = new Benchmark();
+            int coresCount = comboBox7.SelectedIndex;
+            if (!checkBox3.Checked) coresCount = 1;
+            bench.RunBenchmark(1, onProgressUpdate, (result) =>
+            {
+                onProgressUpdate(result);
+                bench.RunBenchmark(coresCount, onProgressUpdateMultithread, onBenchEnd);
+            });
+        }
+
+        private void onProgressUpdate(int result)
+        {
+            if (result > colorProgressBar1.Maximum) colorProgressBar1.Maximum = result;
+            colorProgressBar1.Value = result;
+            label241.Invoke(new Action(() => label241.Text = result.ToString()));
+            
+        }
+
+        private void onProgressUpdateMultithread(int result)
+        {
+            if (result > colorProgressBar3.Maximum) colorProgressBar3.Maximum = result;
+            colorProgressBar3.Value = result;
+            label244.Invoke(new Action(() => label244.Text = result.ToString()));
+        }
+
+        private void onBenchEnd(int result)
+        {
+            onProgressUpdate(result);
+            testIsRunning = false;
+            button1.Invoke(new Action(() => button1.Enabled = true));
         }
     }
 }

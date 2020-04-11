@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Core
 {
@@ -10,13 +12,32 @@ namespace Core
     {
 
         private const int ITER_COUNT = 100000000;
+        private const int ROUNDS = 10;
 
-        public async void RunBenchmark(int threads, Action<int> onComplete)
+        private int avgTime = 0;
+        private int roundsDone = 0;
+
+        public void RunBenchmark(int threads, Action<int> onUpdate, Action<int> onComplete)
         {
-            int start = DateTime.Now.Millisecond;
-            BenchWork();
-            int end = DateTime.Now.Millisecond - start;
-            onComplete(end);
+            avgTime = 0;
+            ThreadPool.SetMaxThreads(threads, threads);
+            for (int i = 0; i < ROUNDS; i++)
+            {
+                ThreadPool.QueueUserWorkItem((ob) =>
+                {
+                    Stopwatch stopWatch = new Stopwatch();
+                    stopWatch.Start();
+                    BenchWork();
+                    stopWatch.Stop();
+                    avgTime += (int)stopWatch.ElapsedMilliseconds;
+                    onUpdate((int)stopWatch.ElapsedMilliseconds);
+                    if (++roundsDone >= ROUNDS)
+                    {
+                        avgTime /= ROUNDS;
+                        onComplete(avgTime);
+                    }
+                });
+            }
         }
 
 

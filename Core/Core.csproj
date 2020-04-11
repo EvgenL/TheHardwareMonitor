@@ -47,7 +47,9 @@
   <ItemGroup>
     <Compile Include="Benchmark.cs" />
     <Compile Include="Cpu.cs" />
+    <Compile Include="Gpu.cs" />
     <Compile Include="Hardware.cs" />
+    <Compile Include="Mainboard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

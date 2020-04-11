@@ -355,8 +355,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel89 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label216 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel96 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel97 = new System.Windows.Forms.FlowLayoutPanel();
@@ -4607,8 +4605,6 @@ namespace TheHardwareMonitor
             // groupBox13
             // 
             this.groupBox13.Controls.Add(this.comboBox3);
-            this.groupBox13.Controls.Add(this.label216);
-            this.groupBox13.Controls.Add(this.comboBox5);
             this.groupBox13.Location = new System.Drawing.Point(3, 3);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(778, 49);
@@ -4625,28 +4621,6 @@ namespace TheHardwareMonitor
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(290, 21);
             this.comboBox3.TabIndex = 4;
-            // 
-            // label216
-            // 
-            this.label216.AutoSize = true;
-            this.label216.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label216.Location = new System.Drawing.Point(301, 21);
-            this.label216.MinimumSize = new System.Drawing.Size(220, 0);
-            this.label216.Name = "label216";
-            this.label216.Size = new System.Drawing.Size(220, 13);
-            this.label216.TabIndex = 5;
-            this.label216.Text = "Уровень производительности";
-            this.label216.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            " Slot #n"});
-            this.comboBox5.Location = new System.Drawing.Point(527, 18);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(219, 21);
-            this.comboBox5.TabIndex = 6;
             // 
             // groupBox14
             // 
@@ -5153,9 +5127,9 @@ namespace TheHardwareMonitor
             this.label242.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label242.Location = new System.Drawing.Point(665, 41);
             this.label242.Name = "label242";
-            this.label242.Size = new System.Drawing.Size(40, 16);
+            this.label242.Size = new System.Drawing.Size(16, 16);
             this.label242.TabIndex = 16;
-            this.label242.Text = "1337";
+            this.label242.Text = "0";
             this.label242.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label241
@@ -5165,9 +5139,9 @@ namespace TheHardwareMonitor
             this.label241.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label241.Location = new System.Drawing.Point(665, 15);
             this.label241.Name = "label241";
-            this.label241.Size = new System.Drawing.Size(40, 16);
+            this.label241.Size = new System.Drawing.Size(16, 16);
             this.label241.TabIndex = 15;
-            this.label241.Text = "1337";
+            this.label241.Text = "0";
             this.label241.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // colorProgressBar2
@@ -5176,13 +5150,13 @@ namespace TheHardwareMonitor
             this.colorProgressBar2.BorderColor = System.Drawing.Color.White;
             this.colorProgressBar2.FillStyle = ColorProgressBar.ColorProgressBar.FillStyles.Solid;
             this.colorProgressBar2.Location = new System.Drawing.Point(128, 37);
-            this.colorProgressBar2.Maximum = 100;
+            this.colorProgressBar2.Maximum = 1000;
             this.colorProgressBar2.Minimum = 0;
             this.colorProgressBar2.Name = "colorProgressBar2";
             this.colorProgressBar2.Size = new System.Drawing.Size(531, 20);
             this.colorProgressBar2.Step = 10;
             this.colorProgressBar2.TabIndex = 12;
-            this.colorProgressBar2.Value = 15;
+            this.colorProgressBar2.Value = 1;
             // 
             // colorProgressBar1
             // 
@@ -5190,13 +5164,14 @@ namespace TheHardwareMonitor
             this.colorProgressBar1.BorderColor = System.Drawing.Color.White;
             this.colorProgressBar1.FillStyle = ColorProgressBar.ColorProgressBar.FillStyles.Solid;
             this.colorProgressBar1.Location = new System.Drawing.Point(128, 15);
-            this.colorProgressBar1.Maximum = 100;
+            this.colorProgressBar1.Maximum = 1000;
             this.colorProgressBar1.Minimum = 0;
             this.colorProgressBar1.Name = "colorProgressBar1";
+            this.colorProgressBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.colorProgressBar1.Size = new System.Drawing.Size(531, 20);
             this.colorProgressBar1.Step = 10;
             this.colorProgressBar1.TabIndex = 11;
-            this.colorProgressBar1.Value = 15;
+            this.colorProgressBar1.Value = 1;
             // 
             // checkBox2
             // 
@@ -5246,9 +5221,9 @@ namespace TheHardwareMonitor
             this.label243.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label243.Location = new System.Drawing.Point(665, 39);
             this.label243.Name = "label243";
-            this.label243.Size = new System.Drawing.Size(40, 16);
+            this.label243.Size = new System.Drawing.Size(16, 16);
             this.label243.TabIndex = 18;
-            this.label243.Text = "1337";
+            this.label243.Text = "0";
             this.label243.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // colorProgressBar3
@@ -5257,13 +5232,13 @@ namespace TheHardwareMonitor
             this.colorProgressBar3.BorderColor = System.Drawing.Color.White;
             this.colorProgressBar3.FillStyle = ColorProgressBar.ColorProgressBar.FillStyles.Solid;
             this.colorProgressBar3.Location = new System.Drawing.Point(128, 35);
-            this.colorProgressBar3.Maximum = 100;
+            this.colorProgressBar3.Maximum = 1000;
             this.colorProgressBar3.Minimum = 0;
             this.colorProgressBar3.Name = "colorProgressBar3";
             this.colorProgressBar3.Size = new System.Drawing.Size(531, 20);
             this.colorProgressBar3.Step = 10;
             this.colorProgressBar3.TabIndex = 14;
-            this.colorProgressBar3.Value = 15;
+            this.colorProgressBar3.Value = 1;
             // 
             // label244
             // 
@@ -5272,9 +5247,9 @@ namespace TheHardwareMonitor
             this.label244.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label244.Location = new System.Drawing.Point(665, 13);
             this.label244.Name = "label244";
-            this.label244.Size = new System.Drawing.Size(40, 16);
+            this.label244.Size = new System.Drawing.Size(16, 16);
             this.label244.TabIndex = 17;
-            this.label244.Text = "1337";
+            this.label244.Text = "0";
             this.label244.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox7
@@ -5293,17 +5268,19 @@ namespace TheHardwareMonitor
             this.colorProgressBar4.BorderColor = System.Drawing.Color.White;
             this.colorProgressBar4.FillStyle = ColorProgressBar.ColorProgressBar.FillStyles.Solid;
             this.colorProgressBar4.Location = new System.Drawing.Point(128, 13);
-            this.colorProgressBar4.Maximum = 100;
+            this.colorProgressBar4.Maximum = 1000;
             this.colorProgressBar4.Minimum = 0;
             this.colorProgressBar4.Name = "colorProgressBar4";
             this.colorProgressBar4.Size = new System.Drawing.Size(531, 20);
             this.colorProgressBar4.Step = 10;
             this.colorProgressBar4.TabIndex = 13;
-            this.colorProgressBar4.Value = 15;
+            this.colorProgressBar4.Value = 1;
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
+            this.checkBox3.Checked = true;
+            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Location = new System.Drawing.Point(22, 63);
             this.checkBox3.MinimumSize = new System.Drawing.Size(100, 0);
             this.checkBox3.Name = "checkBox3";
@@ -5595,7 +5572,6 @@ namespace TheHardwareMonitor
             this.tabPageGraphics.ResumeLayout(false);
             this.flowLayoutPanel89.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
             this.groupBox14.ResumeLayout(false);
             this.flowLayoutPanel96.ResumeLayout(false);
             this.flowLayoutPanel97.ResumeLayout(false);
@@ -5963,8 +5939,6 @@ namespace TheHardwareMonitor
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel89;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label216;
-        private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel96;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel97;
