@@ -129,7 +129,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel26 = new System.Windows.Forms.FlowLayoutPanel();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel28 = new System.Windows.Forms.FlowLayoutPanel();
             this.label53 = new System.Windows.Forms.Label();
@@ -137,7 +136,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel29 = new System.Windows.Forms.FlowLayoutPanel();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel30 = new System.Windows.Forms.FlowLayoutPanel();
             this.label58 = new System.Windows.Forms.Label();
@@ -145,7 +143,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel31 = new System.Windows.Forms.FlowLayoutPanel();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel32 = new System.Windows.Forms.FlowLayoutPanel();
             this.label63 = new System.Windows.Forms.Label();
@@ -153,7 +150,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel33 = new System.Windows.Forms.FlowLayoutPanel();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel39 = new System.Windows.Forms.FlowLayoutPanel();
             this.label78 = new System.Windows.Forms.Label();
@@ -164,7 +160,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel38 = new System.Windows.Forms.FlowLayoutPanel();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
             this.tabPageMainboard = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel40 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -403,13 +398,16 @@ namespace TheHardwareMonitor
             this.tabPageBench = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel103 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.label242 = new System.Windows.Forms.Label();
             this.label241 = new System.Windows.Forms.Label();
             this.colorProgressBar2 = new ColorProgressBar.ColorProgressBar();
             this.colorProgressBar1 = new ColorProgressBar.ColorProgressBar();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label240 = new System.Windows.Forms.Label();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.label243 = new System.Windows.Forms.Label();
             this.colorProgressBar3 = new ColorProgressBar.ColorProgressBar();
+            this.label244 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.colorProgressBar4 = new ColorProgressBar.ColorProgressBar();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -420,9 +418,6 @@ namespace TheHardwareMonitor
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.label242 = new System.Windows.Forms.Label();
-            this.label243 = new System.Windows.Forms.Label();
-            this.label244 = new System.Windows.Forms.Label();
             this.mainTabControl.SuspendLayout();
             this.tabPageCpu.SuspendLayout();
             this.groupBoxProcessor.SuspendLayout();
@@ -577,6 +572,7 @@ namespace TheHardwareMonitor
             this.mainTabControl.SelectedIndex = 0;
             this.mainTabControl.Size = new System.Drawing.Size(798, 419);
             this.mainTabControl.TabIndex = 0;
+            this.mainTabControl.Click += new System.EventHandler(this.mainTabControl_Click);
             // 
             // tabPageCpu
             // 
@@ -591,6 +587,7 @@ namespace TheHardwareMonitor
             this.tabPageCpu.Size = new System.Drawing.Size(790, 393);
             this.tabPageCpu.TabIndex = 0;
             this.tabPageCpu.Text = "ЦП";
+            this.tabPageCpu.Click += new System.EventHandler(this.tabPageCpu_Click);
             // 
             // groupBoxProcessor
             // 
@@ -1547,7 +1544,7 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel35.Controls.Add(this.comboBox1);
             this.flowLayoutPanel35.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel35.Name = "flowLayoutPanel35";
-            this.flowLayoutPanel35.Size = new System.Drawing.Size(279, 29);
+            this.flowLayoutPanel35.Size = new System.Drawing.Size(310, 29);
             this.flowLayoutPanel35.TabIndex = 10;
             // 
             // label67
@@ -1567,7 +1564,7 @@ namespace TheHardwareMonitor
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(139, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(161, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // flowLayoutPanel36
@@ -1575,9 +1572,9 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel36.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel36.Controls.Add(this.label69);
             this.flowLayoutPanel36.Controls.Add(this.label70);
-            this.flowLayoutPanel36.Location = new System.Drawing.Point(288, 3);
+            this.flowLayoutPanel36.Location = new System.Drawing.Point(319, 3);
             this.flowLayoutPanel36.Name = "flowLayoutPanel36";
-            this.flowLayoutPanel36.Size = new System.Drawing.Size(203, 17);
+            this.flowLayoutPanel36.Size = new System.Drawing.Size(160, 17);
             this.flowLayoutPanel36.TabIndex = 11;
             // 
             // label69
@@ -1585,11 +1582,11 @@ namespace TheHardwareMonitor
             this.label69.AutoSize = true;
             this.label69.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label69.Location = new System.Drawing.Point(3, 0);
-            this.label69.MinimumSize = new System.Drawing.Size(150, 0);
+            this.label69.MinimumSize = new System.Drawing.Size(100, 0);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(150, 13);
+            this.label69.Size = new System.Drawing.Size(100, 13);
             this.label69.TabIndex = 0;
-            this.label69.Text = "Семейство";
+            this.label69.Text = "Число ядер";
             this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label70
@@ -1598,7 +1595,7 @@ namespace TheHardwareMonitor
             this.label70.AutoSize = true;
             this.label70.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label70.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label70.Location = new System.Drawing.Point(159, 0);
+            this.label70.Location = new System.Drawing.Point(109, 0);
             this.label70.MinimumSize = new System.Drawing.Size(30, 0);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(30, 15);
@@ -1611,7 +1608,7 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel37.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel37.Controls.Add(this.label71);
             this.flowLayoutPanel37.Controls.Add(this.label72);
-            this.flowLayoutPanel37.Location = new System.Drawing.Point(497, 3);
+            this.flowLayoutPanel37.Location = new System.Drawing.Point(485, 3);
             this.flowLayoutPanel37.Name = "flowLayoutPanel37";
             this.flowLayoutPanel37.Size = new System.Drawing.Size(240, 17);
             this.flowLayoutPanel37.TabIndex = 12;
@@ -1652,6 +1649,7 @@ namespace TheHardwareMonitor
             this.tabPageCaches.Size = new System.Drawing.Size(790, 393);
             this.tabPageCaches.TabIndex = 1;
             this.tabPageCaches.Text = "Кэш";
+            this.tabPageCaches.Click += new System.EventHandler(this.tabPageCaches_Click);
             // 
             // flowLayoutPanel25
             // 
@@ -1718,7 +1716,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel26.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel26.Controls.Add(this.label47);
             this.flowLayoutPanel26.Controls.Add(this.label48);
-            this.flowLayoutPanel26.Controls.Add(this.label49);
             this.flowLayoutPanel26.Location = new System.Drawing.Point(3, 19);
             this.flowLayoutPanel26.Name = "flowLayoutPanel26";
             this.flowLayoutPanel26.Size = new System.Drawing.Size(767, 17);
@@ -1749,20 +1746,6 @@ namespace TheHardwareMonitor
             this.label48.TabIndex = 1;
             this.label48.Text = "ж 31.0 ( 8 - 32 )";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label49
-            // 
-            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label49.AutoSize = true;
-            this.label49.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label49.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label49.Location = new System.Drawing.Point(565, 0);
-            this.label49.MinimumSize = new System.Drawing.Size(190, 0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(190, 15);
-            this.label49.TabIndex = 2;
-            this.label49.Text = "1-way";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox2
             // 
@@ -1816,7 +1799,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel29.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel29.Controls.Add(this.label55);
             this.flowLayoutPanel29.Controls.Add(this.label56);
-            this.flowLayoutPanel29.Controls.Add(this.label57);
             this.flowLayoutPanel29.Location = new System.Drawing.Point(3, 19);
             this.flowLayoutPanel29.Name = "flowLayoutPanel29";
             this.flowLayoutPanel29.Size = new System.Drawing.Size(767, 17);
@@ -1847,20 +1829,6 @@ namespace TheHardwareMonitor
             this.label56.TabIndex = 1;
             this.label56.Text = "ж 31.0 ( 8 - 32 )";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label57
-            // 
-            this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label57.AutoSize = true;
-            this.label57.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label57.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label57.Location = new System.Drawing.Point(565, 0);
-            this.label57.MinimumSize = new System.Drawing.Size(190, 0);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(190, 15);
-            this.label57.TabIndex = 2;
-            this.label57.Text = "1-way";
-            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox3
             // 
@@ -1914,7 +1882,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel31.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel31.Controls.Add(this.label60);
             this.flowLayoutPanel31.Controls.Add(this.label61);
-            this.flowLayoutPanel31.Controls.Add(this.label62);
             this.flowLayoutPanel31.Location = new System.Drawing.Point(3, 19);
             this.flowLayoutPanel31.Name = "flowLayoutPanel31";
             this.flowLayoutPanel31.Size = new System.Drawing.Size(767, 17);
@@ -1945,20 +1912,6 @@ namespace TheHardwareMonitor
             this.label61.TabIndex = 1;
             this.label61.Text = "ж 31.0 ( 8 - 32 )";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label62
-            // 
-            this.label62.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label62.AutoSize = true;
-            this.label62.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label62.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label62.Location = new System.Drawing.Point(565, 0);
-            this.label62.MinimumSize = new System.Drawing.Size(190, 0);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(190, 15);
-            this.label62.TabIndex = 2;
-            this.label62.Text = "1-way";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox4
             // 
@@ -2012,7 +1965,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel33.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel33.Controls.Add(this.label65);
             this.flowLayoutPanel33.Controls.Add(this.label66);
-            this.flowLayoutPanel33.Controls.Add(this.label68);
             this.flowLayoutPanel33.Location = new System.Drawing.Point(3, 19);
             this.flowLayoutPanel33.Name = "flowLayoutPanel33";
             this.flowLayoutPanel33.Size = new System.Drawing.Size(767, 17);
@@ -2044,25 +1996,12 @@ namespace TheHardwareMonitor
             this.label66.Text = "ж 31.0 ( 8 - 32 )";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label68
-            // 
-            this.label68.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label68.AutoSize = true;
-            this.label68.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label68.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label68.Location = new System.Drawing.Point(565, 0);
-            this.label68.MinimumSize = new System.Drawing.Size(190, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(190, 15);
-            this.label68.TabIndex = 2;
-            this.label68.Text = "1-way";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.flowLayoutPanel39);
             this.groupBox5.Controls.Add(this.flowLayoutPanel34);
             this.groupBox5.Controls.Add(this.flowLayoutPanel38);
+            this.groupBox5.Enabled = false;
             this.groupBox5.Location = new System.Drawing.Point(3, 287);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(781, 83);
@@ -2102,7 +2041,7 @@ namespace TheHardwareMonitor
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(350, 15);
             this.label79.TabIndex = 1;
-            this.label79.Text = "ж 31.0 ( 8 - 32 )";
+            this.label79.Text = " ";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel34
@@ -2138,7 +2077,7 @@ namespace TheHardwareMonitor
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(545, 15);
             this.label74.TabIndex = 1;
-            this.label74.Text = "ж 31.0 ( 8 - 32 )";
+            this.label74.Text = " ";
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel38
@@ -2146,7 +2085,6 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel38.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel38.Controls.Add(this.label75);
             this.flowLayoutPanel38.Controls.Add(this.label76);
-            this.flowLayoutPanel38.Controls.Add(this.label77);
             this.flowLayoutPanel38.Location = new System.Drawing.Point(3, 19);
             this.flowLayoutPanel38.Name = "flowLayoutPanel38";
             this.flowLayoutPanel38.Size = new System.Drawing.Size(767, 17);
@@ -2175,22 +2113,8 @@ namespace TheHardwareMonitor
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(350, 15);
             this.label76.TabIndex = 1;
-            this.label76.Text = "ж 31.0 ( 8 - 32 )";
+            this.label76.Text = " ";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label77
-            // 
-            this.label77.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label77.AutoSize = true;
-            this.label77.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label77.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label77.Location = new System.Drawing.Point(565, 0);
-            this.label77.MinimumSize = new System.Drawing.Size(190, 0);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(190, 15);
-            this.label77.TabIndex = 2;
-            this.label77.Text = "1-way";
-            this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPageMainboard
             // 
@@ -2201,6 +2125,7 @@ namespace TheHardwareMonitor
             this.tabPageMainboard.Size = new System.Drawing.Size(790, 393);
             this.tabPageMainboard.TabIndex = 2;
             this.tabPageMainboard.Text = "Плата";
+            this.tabPageMainboard.Click += new System.EventHandler(this.tabPageMainboard_Click);
             // 
             // flowLayoutPanel40
             // 
@@ -2812,6 +2737,7 @@ namespace TheHardwareMonitor
             this.tabPageMemory.Size = new System.Drawing.Size(790, 393);
             this.tabPageMemory.TabIndex = 3;
             this.tabPageMemory.Text = "Память";
+            this.tabPageMemory.Click += new System.EventHandler(this.tabPageMemory_Click);
             // 
             // flowLayoutPanel53
             // 
@@ -3487,6 +3413,7 @@ namespace TheHardwareMonitor
             this.tabPageSpd.Size = new System.Drawing.Size(790, 393);
             this.tabPageSpd.TabIndex = 4;
             this.tabPageSpd.Text = "SPD";
+            this.tabPageSpd.Click += new System.EventHandler(this.tabPageSpd_Click);
             // 
             // flowLayoutPanel71
             // 
@@ -4670,6 +4597,7 @@ namespace TheHardwareMonitor
             this.tabPageGraphics.Size = new System.Drawing.Size(790, 393);
             this.tabPageGraphics.TabIndex = 5;
             this.tabPageGraphics.Text = "Графика";
+            this.tabPageGraphics.Click += new System.EventHandler(this.tabPageGraphics_Click);
             // 
             // flowLayoutPanel89
             // 
@@ -5197,6 +5125,7 @@ namespace TheHardwareMonitor
             this.tabPageBench.Size = new System.Drawing.Size(790, 393);
             this.tabPageBench.TabIndex = 6;
             this.tabPageBench.Text = "Тест";
+            this.tabPageBench.Click += new System.EventHandler(this.tabPageBench_Click);
             // 
             // flowLayoutPanel103
             // 
@@ -5224,6 +5153,18 @@ namespace TheHardwareMonitor
             this.groupBox18.TabIndex = 9;
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "Однопроцессорный поток";
+            // 
+            // label242
+            // 
+            this.label242.AutoSize = true;
+            this.label242.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label242.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label242.Location = new System.Drawing.Point(665, 41);
+            this.label242.Name = "label242";
+            this.label242.Size = new System.Drawing.Size(40, 16);
+            this.label242.TabIndex = 16;
+            this.label242.Text = "1337";
+            this.label242.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label241
             // 
@@ -5306,6 +5247,18 @@ namespace TheHardwareMonitor
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Многопроцессорный поток";
             // 
+            // label243
+            // 
+            this.label243.AutoSize = true;
+            this.label243.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label243.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label243.Location = new System.Drawing.Point(665, 39);
+            this.label243.Name = "label243";
+            this.label243.Size = new System.Drawing.Size(40, 16);
+            this.label243.TabIndex = 18;
+            this.label243.Text = "1337";
+            this.label243.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // colorProgressBar3
             // 
             this.colorProgressBar3.BarColor = System.Drawing.Color.Violet;
@@ -5319,6 +5272,18 @@ namespace TheHardwareMonitor
             this.colorProgressBar3.Step = 10;
             this.colorProgressBar3.TabIndex = 14;
             this.colorProgressBar3.Value = 15;
+            // 
+            // label244
+            // 
+            this.label244.AutoSize = true;
+            this.label244.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label244.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label244.Location = new System.Drawing.Point(665, 13);
+            this.label244.Name = "label244";
+            this.label244.Size = new System.Drawing.Size(40, 16);
+            this.label244.TabIndex = 17;
+            this.label244.Text = "1337";
+            this.label244.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox7
             // 
@@ -5432,42 +5397,7 @@ namespace TheHardwareMonitor
             this.buttonClose.TabIndex = 1;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = true;
-            // 
-            // label242
-            // 
-            this.label242.AutoSize = true;
-            this.label242.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label242.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label242.Location = new System.Drawing.Point(665, 41);
-            this.label242.Name = "label242";
-            this.label242.Size = new System.Drawing.Size(40, 16);
-            this.label242.TabIndex = 16;
-            this.label242.Text = "1337";
-            this.label242.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label243
-            // 
-            this.label243.AutoSize = true;
-            this.label243.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label243.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label243.Location = new System.Drawing.Point(665, 39);
-            this.label243.Name = "label243";
-            this.label243.Size = new System.Drawing.Size(40, 16);
-            this.label243.TabIndex = 18;
-            this.label243.Text = "1337";
-            this.label243.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label244
-            // 
-            this.label244.AutoSize = true;
-            this.label244.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label244.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label244.Location = new System.Drawing.Point(665, 13);
-            this.label244.Name = "label244";
-            this.label244.Size = new System.Drawing.Size(40, 16);
-            this.label244.TabIndex = 17;
-            this.label244.Text = "1337";
-            this.label244.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // MainForm
             // 
@@ -5814,7 +5744,6 @@ namespace TheHardwareMonitor
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel26;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel27;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
@@ -5826,7 +5755,6 @@ namespace TheHardwareMonitor
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel29;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label57;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel30;
         private System.Windows.Forms.Label label58;
@@ -5834,7 +5762,6 @@ namespace TheHardwareMonitor
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel31;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label62;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel32;
         private System.Windows.Forms.Label label63;
@@ -5853,7 +5780,6 @@ namespace TheHardwareMonitor
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel38;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label77;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel40;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel45;
