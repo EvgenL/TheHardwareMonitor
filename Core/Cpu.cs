@@ -54,16 +54,16 @@ namespace Core
         public static string effectiveFreq => (currCpu != null ? currCpu.MaxClockSpeed + " Мгц" : "");
 
         // chache info
-        public static string level1cacheData => Cache.HasData ? Cache.Data.InstalledSize + " Кб" : "";
-        public static string level1cacheInst => Cache.HasInstruction ? Cache.Instruction.InstalledSize + " Кб" : "";
-        public static string level1cache => Cache.HasL1 ? Cache.L1.InstalledSize + " Кб" : "";
-        public static string level2cache => Cache.HasL2 ? Cache.L2.InstalledSize + " Кб" : "";
-        public static string level3cache => Cache.HasL3 ? Cache.L3.InstalledSize / 1024 + " МБ" : "";
-        public static string level1cacheDataAssociativity => Cache.HasData ? Cache.AsscToStr(Cache.Data.Associativity) : "";
-        public static string level1cacheInstAssociativity => Cache.HasInstruction ? Cache.AsscToStr(Cache.Instruction.Associativity) : "";
-        public static string level1cacheAssociativity => Cache.HasL1 ? Cache.AsscToStr(Cache.L1.Associativity) : "";
-        public static string level2cacheAssociativity => Cache.HasL2 ? Cache.AsscToStr(Cache.L2.Associativity) : "";
-        public static string level3cacheAssociativity => Cache.HasL3 ? Cache.AsscToStr(Cache.L3.Associativity) : "";
+        public static string level1cacheData => Cache.HasData ? Cache.Data.InstalledSize + " Кб" : currCpu.L2CacheSize / 1024 + " МБ";
+        public static string level1cacheInst => Cache.HasInstruction ? Cache.Instruction.InstalledSize + " Кб" : currCpu.L2CacheSize / 1024 + " МБ";
+        public static string level1cache => Cache.HasL1 ? Cache.L1.InstalledSize + " Кб" : currCpu.L2CacheSize / 1024 + " МБ";
+        public static string level2cache => Cache.HasL2 ? Cache.L2.InstalledSize + " Кб" : currCpu.L2CacheSize / 1024 + " МБ";
+        public static string level3cache => Cache.HasL3 ? Cache.L3.InstalledSize / 1024 + " МБ" : currCpu.L3CacheSize / 1024 + " МБ";
+        public static string level1cacheDataAssociativity => Cache.HasData ? Cache.AsscToStr(Cache.Data.Associativity) : currCpu.L2CacheSpeed + " Нс";
+        public static string level1cacheInstAssociativity => Cache.HasInstruction ? Cache.AsscToStr(Cache.Instruction.Associativity) : currCpu.L3CacheSpeed + " Нс";
+        public static string level1cacheAssociativity => Cache.HasL1 ? Cache.AsscToStr(Cache.L1.Associativity) : currCpu.L3CacheSpeed + " Нс";
+        public static string level2cacheAssociativity => Cache.HasL2 ? Cache.AsscToStr(Cache.L2.Associativity) : currCpu.L2CacheSpeed + " Нс";
+        public static string level3cacheAssociativity => Cache.HasL3 ? Cache.AsscToStr(Cache.L3.Associativity) : currCpu.L3CacheSpeed + " Нс";
 
         // other
         public static string coreCount => (currCpu != null ? currCpu.NumberOfCores.ToString() : "");
@@ -80,7 +80,19 @@ namespace Core
             public static bool HasL3 = HasAny && L3 != null;
 
             private static CIMv2.Win32CacheMemory[] caches
-                => Hardware.context.CIMv2.Win32CacheMemories.ToArray();
+            {
+                get
+                {
+                    try
+                    {
+                        return Hardware.context.CIMv2.Win32CacheMemories.ToArray();
+                    }
+                    catch (Exception e)
+                    {
+                        return new CIMv2.Win32CacheMemory[0];
+                    }
+                }
+            }
 
             public static CIMv2.Win32CacheMemory Data 
                 => HasAny ? caches.SingleOrDefault(c => c.CacheType == CIMv2.Win32CacheMemoryCacheType.Data)

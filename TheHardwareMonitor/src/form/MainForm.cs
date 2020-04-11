@@ -70,6 +70,7 @@ namespace TheHardwareMonitor
                     comboBox1.Items.Add(cpu);
                 }
                 comboBox1.Click += onCombo1Click();
+                if (comboBox1.Items.Count > 0) comboBox1.SelectedIndex = 0;
             }
 
             label70.Text = Cpu.coreCount;
@@ -127,6 +128,7 @@ namespace TheHardwareMonitor
                     comboBox2.Items.Add(ram);
                 }
                 comboBox2.Click += onCombo2Click();
+                if (comboBox2.Items.Count > 0) comboBox2.SelectedIndex = 0;
             }
             label110.Text = Ram.memType;
             label112.Text = Ram.memSize;
@@ -158,6 +160,7 @@ namespace TheHardwareMonitor
                     comboBox3.Items.Add(gpu);
                 }
                 comboBox3.Click += onCombo3Click();
+                if (comboBox3.Items.Count > 0) comboBox3.SelectedIndex = 0;
             }
 
             label239.Text = Gpu.name;

@@ -186,6 +186,9 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel53 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel54 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel55 = new System.Windows.Forms.FlowLayoutPanel();
             this.label109 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
@@ -296,9 +299,6 @@ namespace TheHardwareMonitor
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.mainTabControl.SuspendLayout();
             this.tabPageCpu.SuspendLayout();
             this.groupBoxProcessor.SuspendLayout();
@@ -364,6 +364,7 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel53.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.flowLayoutPanel54.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel55.SuspendLayout();
             this.flowLayoutPanel56.SuspendLayout();
             this.flowLayoutPanel57.SuspendLayout();
@@ -403,7 +404,6 @@ namespace TheHardwareMonitor
             this.groupBox18.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.groupBox17.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabControl
@@ -442,7 +442,7 @@ namespace TheHardwareMonitor
             this.groupBoxProcessor.Controls.Add(this.groupBoxClocks);
             this.groupBoxProcessor.Location = new System.Drawing.Point(0, 0);
             this.groupBoxProcessor.Name = "groupBoxProcessor";
-            this.groupBoxProcessor.Size = new System.Drawing.Size(784, 213);
+            this.groupBoxProcessor.Size = new System.Drawing.Size(784, 343);
             this.groupBoxProcessor.TabIndex = 0;
             this.groupBoxProcessor.TabStop = false;
             this.groupBoxProcessor.Text = "Процессор";
@@ -794,7 +794,7 @@ namespace TheHardwareMonitor
             this.groupBoxChache.Location = new System.Drawing.Point(279, 139);
             this.groupBoxChache.Name = "groupBoxChache";
             this.groupBoxChache.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBoxChache.Size = new System.Drawing.Size(507, 109);
+            this.groupBoxChache.Size = new System.Drawing.Size(507, 125);
             this.groupBoxChache.TabIndex = 2;
             this.groupBoxChache.TabStop = false;
             this.groupBoxChache.Text = "Сведения о кэш-памяти процессора";
@@ -808,7 +808,7 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel19.Controls.Add(this.flowLayoutPanel23);
             this.flowLayoutPanel19.Location = new System.Drawing.Point(2, 12);
             this.flowLayoutPanel19.Name = "flowLayoutPanel19";
-            this.flowLayoutPanel19.Size = new System.Drawing.Size(770, 205);
+            this.flowLayoutPanel19.Size = new System.Drawing.Size(497, 166);
             this.flowLayoutPanel19.TabIndex = 1;
             // 
             // flowLayoutPanel20
@@ -2286,6 +2286,36 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel54.Size = new System.Drawing.Size(770, 109);
             this.flowLayoutPanel54.TabIndex = 1;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.Controls.Add(this.label1);
+            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(769, 29);
+            this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.MinimumSize = new System.Drawing.Size(150, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Устройство";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(159, 3);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(256, 21);
+            this.comboBox2.TabIndex = 0;
+            // 
             // flowLayoutPanel55
             // 
             this.flowLayoutPanel55.BackColor = System.Drawing.Color.Transparent;
@@ -3631,36 +3661,6 @@ namespace TheHardwareMonitor
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(769, 29);
-            this.flowLayoutPanel1.TabIndex = 3;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(159, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(256, 21);
-            this.comboBox2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.MinimumSize = new System.Drawing.Size(150, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Устройство";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3778,6 +3778,8 @@ namespace TheHardwareMonitor
             this.flowLayoutPanel53.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.flowLayoutPanel54.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel55.ResumeLayout(false);
             this.flowLayoutPanel55.PerformLayout();
             this.flowLayoutPanel56.ResumeLayout(false);
@@ -3843,8 +3845,6 @@ namespace TheHardwareMonitor
             this.groupBox20.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
