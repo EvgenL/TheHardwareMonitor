@@ -16,6 +16,12 @@ namespace TheHardwareMonitor
         private void InitHardwareDisplay()
         {
             tabPageCpuInit(this);
+            tabPageCachesInit(this);
+            tabPageMainboardInit(this);
+            tabPageMemoryInit(this);
+            tabPageSpdInit(this);
+            tabPageGraphicsInit(this);
+            tabPageBenchInit(this);
         }
 
         private void buttonClose_Click(object sender, EventArgs e)

@@ -8,20 +8,17 @@ namespace Core
 {
     public static class Cpu
     {
-        private static ManagementObjectContext _mc;
-        private static ManagementObjectContext mc =>
-            _mc == null ? new ManagementObjectContext() : null;
 
         public static int currCpuIndex = 0;
 
-        private static MissingLinq.Linq2Management.Model.CIMv2.Win32Processor
-            currCpu => mc.CIMv2.Win32Processors.ToArray()[currCpuIndex];
+        private static CIMv2.Win32Processor currCpu 
+            => Hardware.context.CIMv2.Win32Processors.ToArray()[currCpuIndex];
 
         public static string[] processors
         {
             get
             {
-                var cpus = mc.CIMv2.Win32Processors.ToList();
+                var cpus = Hardware.context.CIMv2.Win32Processors.ToList();
                 var a =
                     from cp in cpus select processorNameFromSpec(cp.Name);
                 return a.ToArray();
@@ -83,7 +80,7 @@ namespace Core
             public static bool HasL3 = HasAny && L3 != null;
 
             private static CIMv2.Win32CacheMemory[] caches
-                => mc.CIMv2.Win32CacheMemories.ToArray();
+                => Hardware.context.CIMv2.Win32CacheMemories.ToArray();
 
             public static CIMv2.Win32CacheMemory Data 
                 => HasAny ? caches.SingleOrDefault(c => c.CacheType == CIMv2.Win32CacheMemoryCacheType.Data)

@@ -8,16 +8,10 @@ namespace Core
     public static class Hardware
     {
 
-
         private static ManagementObjectContext _mc;
-        private static ManagementObjectContext mc
-        {
-            get
-            {
-                if (_mc == null) _mc = new ManagementObjectContext();
-                return _mc;
-            }
-        }
+        public static ManagementObjectContext context =>
+            _mc == null ? new ManagementObjectContext() : null;
+
 
         public static void Test()
         {
